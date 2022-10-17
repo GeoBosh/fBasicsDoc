@@ -1,306 +1,306 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/404.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/404.html</loc>
   </url>
   <url>
-    <loc>/authors.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/authors.html</loc>
   </url>
   <url>
-    <loc>/index.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/index.html</loc>
   </url>
   <url>
-    <loc>/news/index.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/news/index.html</loc>
   </url>
   <url>
-    <loc>/reference/00fBasics-package.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/00fBasics-package.html</loc>
   </url>
   <url>
-    <loc>/reference/baseMethods.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/baseMethods.html</loc>
   </url>
   <url>
-    <loc>/reference/data-examples.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/data-examples.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-DistributionFits.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-DistributionFits.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-distCheck.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-distCheck.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-gh.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-gh.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-ghFit.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-ghFit.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-ghMode.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-ghMode.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-ghMoments.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-ghMoments.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-ghRobMoments.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-ghRobMoments.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-ghSlider.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-ghSlider.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-ght.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-ght.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-ghtFit.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-ghtFit.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-ghtMode.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-ghtMode.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-ghtMoments.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-ghtMoments.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-ghtRobMoments.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-ghtRobMoments.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-gld.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-gld.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-gldFit.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-gldFit.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-gldMode.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-gldMode.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-gldRobMoments.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-gldRobMoments.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-hyp.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-hyp.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-hypFit.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-hypFit.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-hypMode.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-hypMode.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-hypMoments.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-hypMoments.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-hypRobMoments.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-hypRobMoments.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-hypSlider.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-hypSlider.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-nig.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-nig.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-nigFit.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-nigFit.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-nigMode.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-nigMode.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-nigMoments.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-nigMoments.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-nigRobMoments.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-nigRobMoments.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-nigShapeTriangle.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-nigShapeTriangle.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-nigSlider.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-nigSlider.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-normRobMoments.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-normRobMoments.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-sgh.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-sgh.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-sghFit.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-sghFit.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-sght.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-sght.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-snig.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-snig.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-snigFit.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-snigFit.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-ssd.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-ssd.html</loc>
   </url>
   <url>
-    <loc>/reference/dist-ssdFit.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/dist-ssdFit.html</loc>
   </url>
   <url>
-    <loc>/reference/fBasics-deprecated.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.html</loc>
   </url>
   <url>
-    <loc>/reference/fBasics-reexports.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/fBasics-reexports.html</loc>
   </url>
   <url>
-    <loc>/reference/index.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/index.html</loc>
   </url>
   <url>
-    <loc>/reference/matrix-colVec.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/matrix-colVec.html</loc>
   </url>
   <url>
-    <loc>/reference/matrix-gridVector.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/matrix-gridVector.html</loc>
   </url>
   <url>
-    <loc>/reference/matrix-hilbert.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/matrix-hilbert.html</loc>
   </url>
   <url>
-    <loc>/reference/matrix-inv.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/matrix-inv.html</loc>
   </url>
   <url>
-    <loc>/reference/matrix-kron.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/matrix-kron.html</loc>
   </url>
   <url>
-    <loc>/reference/matrix-norm.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/matrix-norm.html</loc>
   </url>
   <url>
-    <loc>/reference/matrix-pascal.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/matrix-pascal.html</loc>
   </url>
   <url>
-    <loc>/reference/matrix-pdl.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/matrix-pdl.html</loc>
   </url>
   <url>
-    <loc>/reference/matrix-posDefinite.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/matrix-posDefinite.html</loc>
   </url>
   <url>
-    <loc>/reference/matrix-rk.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/matrix-rk.html</loc>
   </url>
   <url>
-    <loc>/reference/matrix-tr.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/matrix-tr.html</loc>
   </url>
   <url>
-    <loc>/reference/matrix-triang.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/matrix-triang.html</loc>
   </url>
   <url>
-    <loc>/reference/matrix-tslag.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/matrix-tslag.html</loc>
   </url>
   <url>
-    <loc>/reference/matrix-vech.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/matrix-vech.html</loc>
   </url>
   <url>
-    <loc>/reference/plot-acfPlot.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/plot-acfPlot.html</loc>
   </url>
   <url>
-    <loc>/reference/plot-boxPlot.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/plot-boxPlot.html</loc>
   </url>
   <url>
-    <loc>/reference/plot-histPlot.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/plot-histPlot.html</loc>
   </url>
   <url>
-    <loc>/reference/plot-qqPlot.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/plot-qqPlot.html</loc>
   </url>
   <url>
-    <loc>/reference/plot-returnSeriesGUI.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/plot-returnSeriesGUI.html</loc>
   </url>
   <url>
-    <loc>/reference/plot-scalinglawPlot.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/plot-scalinglawPlot.html</loc>
   </url>
   <url>
-    <loc>/reference/plot-seriesPlot.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/plot-seriesPlot.html</loc>
   </url>
   <url>
-    <loc>/reference/stableSlider.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/stableSlider.html</loc>
   </url>
   <url>
-    <loc>/reference/stats-basicStats.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/stats-basicStats.html</loc>
   </url>
   <url>
-    <loc>/reference/stats-interpAkima.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/stats-interpAkima.html</loc>
   </url>
   <url>
-    <loc>/reference/stats-interpKrige.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/stats-interpKrige.html</loc>
   </url>
   <url>
-    <loc>/reference/stats-interpLinear.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/stats-interpLinear.html</loc>
   </url>
   <url>
-    <loc>/reference/stats-maxdd.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/stats-maxdd.html</loc>
   </url>
   <url>
-    <loc>/reference/stats-rowStats.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/stats-rowStats.html</loc>
   </url>
   <url>
-    <loc>/reference/stats-sampleLMoments.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/stats-sampleLMoments.html</loc>
   </url>
   <url>
-    <loc>/reference/stats-sampleRobMoments.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/stats-sampleRobMoments.html</loc>
   </url>
   <url>
-    <loc>/reference/test-correlationTest.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/test-correlationTest.html</loc>
   </url>
   <url>
-    <loc>/reference/test-fHTEST.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/test-fHTEST.html</loc>
   </url>
   <url>
-    <loc>/reference/test-ks2Test.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/test-ks2Test.html</loc>
   </url>
   <url>
-    <loc>/reference/test-locationTest.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/test-locationTest.html</loc>
   </url>
   <url>
-    <loc>/reference/test-normalityTests.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/test-normalityTests.html</loc>
   </url>
   <url>
-    <loc>/reference/test-scaleTest.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/test-scaleTest.html</loc>
   </url>
   <url>
-    <loc>/reference/test-varianceTest.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/test-varianceTest.html</loc>
   </url>
   <url>
-    <loc>/reference/utils-Heaviside.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-Heaviside.html</loc>
   </url>
   <url>
-    <loc>/reference/utils-characterTable.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-characterTable.html</loc>
   </url>
   <url>
-    <loc>/reference/utils-colIds.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-colIds.html</loc>
   </url>
   <url>
-    <loc>/reference/utils-colorLocator.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-colorLocator.html</loc>
   </url>
   <url>
-    <loc>/reference/utils-colorPalette.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-colorPalette.html</loc>
   </url>
   <url>
-    <loc>/reference/utils-colorTable.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-colorTable.html</loc>
   </url>
   <url>
-    <loc>/reference/utils-decor.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-decor.html</loc>
   </url>
   <url>
-    <loc>/reference/utils-getS4.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-getS4.html</loc>
   </url>
   <url>
-    <loc>/reference/utils-hessian.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-hessian.html</loc>
   </url>
   <url>
-    <loc>/reference/utils-interactivePlot.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-interactivePlot.html</loc>
   </url>
   <url>
-    <loc>/reference/utils-listDescription.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-listDescription.html</loc>
   </url>
   <url>
-    <loc>/reference/utils-listFunctions.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-listFunctions.html</loc>
   </url>
   <url>
-    <loc>/reference/utils-listIndex.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-listIndex.html</loc>
   </url>
   <url>
-    <loc>/reference/utils-printControl.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-printControl.html</loc>
   </url>
   <url>
-    <loc>/reference/utils-randLCG.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-randLCG.html</loc>
   </url>
   <url>
-    <loc>/reference/utils-symbolTable.html</loc>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-symbolTable.html</loc>
   </url>
 </urlset>
