@@ -93,9 +93,11 @@ stableFitMLE and Quantile Method stable parameter fit.
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>x</dt>
 <dd><p>a numeric vector.</p></dd>
-<dt>doplot</dt>
+
+    <dt>doplot</dt>
 <dd><p>a logical flag. Should a plot be displayed?</p></dd>
-<dt>span</dt>
+
+    <dt>span</dt>
 <dd><p>x-coordinates for the plot, by default 100 values 
         automatically selected and ranging between the 0.001, 
         and 0.999 quantiles. Alternatively, you can specify
@@ -103,10 +105,12 @@ stableFitMLE and Quantile Method stable parameter fit.
         times = n)</code>, where, <code>min</code> and <code>max</code> are the 
         left and right endpoints of the range, and <code>n</code> gives 
         the number of the intermediate points.</p></dd>
-<dt>control</dt>
+
+    <dt>control</dt>
 <dd><p>[stableFit] - <br>
         a list of control parameters, see function <code>nlminb</code>.</p></dd>
-<dt>alpha, beta, gamma, delta</dt>
+
+    <dt>alpha, beta, gamma, delta</dt>
 <dd><p>[stable] - <br>
         The parameters are <code>alpha</code>, <code>beta</code>, <code>gamma</code>, 
         and <code>delta</code>:<br>
@@ -114,27 +118,39 @@ stableFitMLE and Quantile Method stable parameter fit.
         skewness parameter <code>beta</code>, in the range [-1, 1];
         scale parameter <code>gamma</code>; and
         shift parameter <code>delta</code>.</p></dd>
-<dt>description</dt>
+
+    <dt>description</dt>
 <dd><p>a character string which allows for a brief description.</p></dd>
-<dt>df</dt>
+
+    <dt>df</dt>
 <dd><p>the number of degrees of freedom for the Student distribution, 
         <code>df &gt; 2</code>, maybe non-integer. By default a value of 4 is
         assumed.</p></dd>
-<dt>title</dt>
+
+    <dt>title</dt>
 <dd><p>a character string which allows for a project title.</p></dd>
-<dt>trace</dt>
+
+    <dt>trace</dt>
 <dd><p>a logical flag. Should the parameter estimation process be
         traced?</p></dd>
-<dt>type</dt>
+
+    <dt>type</dt>
 <dd><p>a character string which allows to select the method for
         parameter estimation: <code>"mle"</code>, the maximum log likelihood
         approach, or <code>"qm"</code>, McCulloch's quantile method.</p></dd>
-<dt>...</dt>
+
+    <dt>...</dt>
 <dd><p>parameters to be parsed.</p></dd>
+
+
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p>an object from class <code>"fDISTFIT"</code></p>
+    
+
+<p>an object from class <code>"fDISTFIT"</code></p>
+
+
     </div>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
@@ -178,7 +194,7 @@ stableFitMLE and Quantile Method stable parameter fit.
 <span class="r-out co"><span class="r-pr">#&gt;</span> 0.4952318 2.0767958 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Description:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  Thu Oct 20 12:11:51 2022 by user: georgi </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Thu Oct 20 12:36:23 2022 by user: georgi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 </code></pre></div>
     </div>
@@ -191,7 +207,7 @@ stableFitMLE and Quantile Method stable parameter fit.
 </div>
 
 <div class="pkgdown-footer-right">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
     </footer></div>

@@ -67,19 +67,24 @@ Estimates the distributional parameters for a
         <code>delta</code> is the scale parameter, must be zero or positive; 
         <code>mu</code> is the location parameter, by default 0.
         These are the parameters in the first parameterization.</p></dd>
-<dt>nu</dt>
+
+    <dt>nu</dt>
 <dd><p>defines the number of degrees of freedom. 
         Note, <code>alpha</code> takes the limit of <code>abs(beta)</code>, 
         and <code>lambda=-nu/2</code>.</p></dd>
-<dt>x</dt>
+
+    <dt>x</dt>
 <dd><p>a numeric vector.</p></dd>
-<dt>scale</dt>
+
+    <dt>scale</dt>
 <dd><p>a logical flag, by default <code>TRUE</code>. Should the time series
         be scaled by its standard deviation to achieve a more stable
         optimization?</p></dd>
-<dt>doplot</dt>
+
+    <dt>doplot</dt>
 <dd><p>a logical flag. Should a plot be displayed?</p></dd>
-<dt>span</dt>
+        
+    <dt>span</dt>
 <dd><p>x-coordinates for the plot, by default 100 values 
         automatically selected and ranging between the 0.001, 
         and 0.999 quantiles. Alternatively, you can specify
@@ -87,27 +92,39 @@ Estimates the distributional parameters for a
         times = n)</code>, where, <code>min</code> and <code>max</code> are the 
         left and right endpoints of the range, and <code>n</code> gives 
         the number of the intermediate points.</p></dd>
-<dt>trace</dt>
+        
+    <dt>trace</dt>
 <dd><p>a logical flag. Should the parameter estimation process be
         traced?</p></dd>
-<dt>title</dt>
+
+    <dt>title</dt>
 <dd><p>a character string which allows for a project title.</p></dd>
-<dt>description</dt>
+     
+    <dt>description</dt>
 <dd><p>a character string which allows for a brief description.</p></dd>
-<dt>...</dt>
+
+    <dt>...</dt>
 <dd><p>parameters to be parsed.</p></dd>
+
+
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p>an object from class <code>"fDISTFIT"</code>.
-  Slot <code>fit</code> is a list with the following components:</p>
+    
+
+<p>an object from class <code>"fDISTFIT"</code>.</p>
+
+
+<p>Slot <code>fit</code> is a list with the following components:</p>
 <dl><dt>estimate</dt>
 <dd><p>the point at which the maximum value of the log liklihood 
         function is obtained.</p></dd>
-<dt>minimum</dt>
+
+    <dt>minimum</dt>
 <dd><p>the value of the estimated maximum, i.e. the value of the
         log liklihood function.</p></dd>
-<dt>code</dt>
+
+    <dt>code</dt>
 <dd><p>an integer indicating why the optimization process terminated.<br>
         1: relative gradient is close to zero, current iterate is probably 
             solution; <br>
@@ -121,10 +138,14 @@ Estimates the distributional parameters for a
             Either the function is unbounded below, becomes asymptotic to a 
             finite value from above in some direction or <code>stepmax</code> 
             is too small.</p></dd>
-<dt>gradient</dt>
+
+    <dt>gradient</dt>
 <dd><p>the gradient at the estimated maximum.</p></dd>
-<dt>steps</dt>
+
+    <dt>steps</dt>
 <dd><p>number of function calls.</p></dd>
+
+              
 </dl></div>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
@@ -154,7 +175,7 @@ Estimates the distributional parameters for a
 </div>
 
 <div class="pkgdown-footer-right">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
     </footer></div>

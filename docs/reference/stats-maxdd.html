@@ -95,16 +95,22 @@ maxddStatsthe expectation of drawdowns.
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>x, q</dt>
 <dd><p>a numeric vector of quantiles.</p></dd>
-<dt>n</dt>
+  
+    <dt>n</dt>
 <dd><p>an integer value, the number of observations.</p></dd>
-<dt>mean, sd</dt>
+   
+    <dt>mean, sd</dt>
 <dd><p>two numeric values, the mean and standard deviation.</p></dd>
-<dt>horizon</dt>
+
+    <dt>horizon</dt>
 <dd><p>an integer value, the (run time) horizon of the investor.</p></dd>
-<dt>N</dt>
+
+    <dt>N</dt>
 <dd><p>an integer value, the precession index for summations. 
         Before you change this value please inspect Magdon-Ismail
         et. al. (2003).</p></dd>
+
+        
 </dl></div>
     <div class="section level2">
     <h2 id="note">Note<a class="anchor" aria-label="anchor" href="#note"></a></h2>
@@ -115,19 +121,57 @@ maxddStatsthe expectation of drawdowns.
     </div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p><code>dmaxdd</code>    returns for a trendless Brownian process <code>mean=0</code> and
+    
+
+<p></p>
+<p><code>dmaxdd</code></p>
+ 
+
+<p>returns for a trendless Brownian process <code>mean=0</code> and
     standard deviation "sd" the density from the probability 
     that the maximum drawdown "D" is larger or equal to "h"  
-    in the interval [0,T], where "T" denotes the time <code>horizon</code>    of the investor.
-<br><code>pmaxdd</code>    returns for a trendless Brownian process <code>mean=0</code> and
+    in the interval [0,T], where "T" denotes the time <code>horizon</code></p>
+  
+
+<p>of the investor.</p>
+<p></p>
+<p><br></p>
+
+    
+<p></p>
+<p><code>pmaxdd</code></p>
+ 
+
+<p>returns for a trendless Brownian process <code>mean=0</code> and
     standard deviation "sd" the probability 
     that the maximum drawdown "D" is larger or equal to "h"  
-    in the interval [0,T], where "T" denotes the time <code>horizon</code>    of the investor.
-<br><code>rmaxdd</code>    returns for a Brownian Motion process with mean <code>mean</code> and 
-    standard deviation <code>sd</code> random variates of maximum drawdowns.
-<br><code>maxddStats</code>    returns the expectation Value E[D] of maximum drawdowns of
+    in the interval [0,T], where "T" denotes the time <code>horizon</code></p>
+  
+
+<p>of the investor.</p>
+<p></p>
+<p><br></p>
+
+    
+<p></p>
+<p><code>rmaxdd</code></p>
+
+
+<p>returns for a Brownian Motion process with mean <code>mean</code> and 
+    standard deviation <code>sd</code> random variates of maximum drawdowns.</p>
+<p></p>
+<p><br></p>
+
+    
+<p></p>
+<p><code>maxddStats</code></p>
+ 
+
+<p>returns the expectation Value E[D] of maximum drawdowns of
     Brownian Motion for a given drift <code>mean</code>, variance <code>sd</code>,  
     and runtime <code>horizon</code> of the Brownian Motion process.</p>
+  
+
     </div>
     <div class="section level2">
     <h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a></h2>
@@ -194,7 +238,7 @@ maxddStatsthe expectation of drawdowns.
 </div>
 
 <div class="pkgdown-footer-right">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
     </footer></div>
