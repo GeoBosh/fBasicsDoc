@@ -13,7 +13,7 @@ stableFitMLE and Quantile Method stable parameter fit.
 
 
 
-"><title>Parameter Fit of a Distribution — DistributionFits • fBasics</title><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link href="../deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet"><script src="../deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous"><!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Parameter Fit of a Distribution — DistributionFits"><meta property="og:description" content="
+"><title>Parametric fit of a distribution — DistributionFits • fBasics</title><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link href="../deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet"><script src="../deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous"><!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Parametric fit of a distribution — DistributionFits"><meta property="og:description" content="
 
 A collection and description of moment and maximum 
     likelihood estimators to fit the parameters of a 
@@ -62,7 +62,7 @@ stableFitMLE and Quantile Method stable parameter fit.
 </nav><div class="container template-reference-topic">
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
-      <img src="" class="logo" alt=""><h1>Parameter Fit of a Distribution</h1>
+      <img src="" class="logo" alt=""><h1>Parametric fit of a distribution</h1>
       
       <div class="d-none name"><code>dist-DistributionFits.Rd</code></div>
     </div>
@@ -86,15 +86,24 @@ stableFitMLE and Quantile Method stable parameter fit.
     
 <span class="fu">stableFit</span><span class="op">(</span><span class="va">x</span>, alpha <span class="op">=</span> <span class="fl">1.75</span>, beta <span class="op">=</span> <span class="fl">0</span>, gamma <span class="op">=</span> <span class="fl">1</span>, delta <span class="op">=</span> <span class="fl">0</span>, 
     type <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"q"</span>, <span class="st">"mle"</span><span class="op">)</span>, doplot <span class="op">=</span> <span class="cn">TRUE</span>, control <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="op">)</span>,
-    trace <span class="op">=</span> <span class="cn">FALSE</span>, title <span class="op">=</span> <span class="cn">NULL</span>, description <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span> 
-    
-<span class="co"># S4 method for fDISTFIT</span>
-<span class="fu">show</span><span class="op">(</span><span class="va">object</span><span class="op">)</span></code></pre></div>
+    trace <span class="op">=</span> <span class="cn">FALSE</span>, title <span class="op">=</span> <span class="cn">NULL</span>, description <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre></div>
     </div>
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
-    <dl><dt>control</dt>
+    <dl><dt>x</dt>
+<dd><p>a numeric vector.</p></dd>
+<dt>doplot</dt>
+<dd><p>a logical flag. Should a plot be displayed?</p></dd>
+<dt>span</dt>
+<dd><p>x-coordinates for the plot, by default 100 values 
+        automatically selected and ranging between the 0.001, 
+        and 0.999 quantiles. Alternatively, you can specify
+        the range by an expression like <code>span=seq(min, max,
+        times = n)</code>, where, <code>min</code> and <code>max</code> are the 
+        left and right endpoints of the range, and <code>n</code> gives 
+        the number of the intermediate points.</p></dd>
+<dt>control</dt>
 <dd><p>[stableFit] - <br>
         a list of control parameters, see function <code>nlminb</code>.</p></dd>
 <dt>alpha, beta, gamma, delta</dt>
@@ -111,19 +120,6 @@ stableFitMLE and Quantile Method stable parameter fit.
 <dd><p>the number of degrees of freedom for the Student distribution, 
         <code>df &gt; 2</code>, maybe non-integer. By default a value of 4 is
         assumed.</p></dd>
-<dt>object</dt>
-<dd><p>[show] - <br>
-        an S4 class object as returned from the fitting functions.</p></dd>
-<dt>doplot</dt>
-<dd><p>a logical flag. Should a plot be displayed?</p></dd>
-<dt>span</dt>
-<dd><p>x-coordinates for the plot, by default 100 values 
-        automatically selected and ranging between the 0.001, 
-        and 0.999 quantiles. Alternatively, you can specify
-        the range by an expression like <code>span=seq(min, max,
-        times = n)</code>, where, <code>min</code> and <code>max</code> are the 
-        left and right endpoints of the range, and <code>n</code> gives 
-        the number of the intermediate points.</p></dd>
 <dt>title</dt>
 <dd><p>a character string which allows for a project title.</p></dd>
 <dt>trace</dt>
@@ -133,27 +129,12 @@ stableFitMLE and Quantile Method stable parameter fit.
 <dd><p>a character string which allows to select the method for
         parameter estimation: <code>"mle"</code>, the maximum log likelihood
         approach, or <code>"qm"</code>, McCulloch's quantile method.</p></dd>
-<dt>x</dt>
-<dd><p>a numeric vector.</p></dd>
 <dt>...</dt>
 <dd><p>parameters to be parsed.</p></dd>
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p>The functions <code>tFit</code>, <code>hypFit</code> and <code>nigFit</code> return 
-    a list with the following components:</p>
-<dl><dt>estimate</dt>
-<dd><p>the point at which the maximum value of the log liklihood 
-        function is obtained.</p></dd>
-<dt>minimum</dt>
-<dd><p>the value of the estimated maximum, i.e. the value of the
-        log liklihood function.</p></dd>
-<dt>code</dt>
-<dd><p>an integer indicating why the optimization process terminated.</p></dd>
-<dt>gradient</dt>
-<dd><p>the gradient at the estimated maximum.</p></dd>
-</dl><p>Remark: The parameter estimation for the stable distribution via the 
-    maximum Log-Likelihood approach may take a quite long time.</p>
+    <p>an object from class <code>"fDISTFIT"</code></p>
     </div>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
@@ -167,6 +148,8 @@ stableFitMLE and Quantile Method stable parameter fit.
     five quantiles from a sample to estimate <code>alpha</code> and <code>beta</code>
     without asymptotic bias. Unfortunately, the estimators provided by
     McCulloch have restriction <code>alpha&gt;0.6</code>.</p>
+<p><em>Remark:</em> The parameter estimation for the stable distribution
+    via the maximum Log-Likelihood approach may take a quite long time.</p>
     </div>
 
     <div class="section level2">
@@ -195,7 +178,7 @@ stableFitMLE and Quantile Method stable parameter fit.
 <span class="r-out co"><span class="r-pr">#&gt;</span> 0.4952318 2.0767958 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Description:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  Mon Oct 17 16:06:52 2022 by user: georgi </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Thu Oct 20 12:11:51 2022 by user: georgi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 </code></pre></div>
     </div>

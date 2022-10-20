@@ -65,40 +65,44 @@ Density, distribution function, quantile function
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
-    <dl><dt>alpha, beta, delta, mu</dt>
-<dd><p>shape parameter <code>alpha</code>;
-        skewness parameter <code>beta</code>, <code>abs(beta)</code> is in the 
-        range (0, alpha);
-        scale parameter <code>delta</code>, <code>delta</code> must be zero or 
-        positive; 
-        location parameter <code>mu</code>, by default 0.
-        These are the parameters in the first parameterization.</p></dd>
-<dt>log</dt>
-<dd><p>a logical flag by default <code>FALSE</code>. 
-        Should labels and a main title drawn to the plot?</p></dd>
-<dt>n</dt>
-<dd><p>number of observations.</p></dd>
+    <dl><dt>x,q</dt>
+<dd><p>a numeric vector of quantiles.</p></dd>
 <dt>p</dt>
 <dd><p>a numeric vector of probabilities.</p></dd>
-<dt>x, q</dt>
-<dd><p>a numeric vector of quantiles.</p></dd>
+<dt>n</dt>
+<dd><p>number of observations.</p></dd>
+<dt>alpha</dt>
+<dd><p>shape parameter.</p></dd>
+<dt>beta</dt>
+<dd><p>skewness parameter <code>beta</code>, <code>abs(beta)</code> is in the range
+      <code>(0, alpha)</code>.</p></dd>
+<dt>delta</dt>
+<dd><p>scale parameter, must be zero or positive.</p></dd>
+<dt>mu</dt>
+<dd><p>location parameter, by default 0.</p></dd>
+<dt>log</dt>
+<dd><p>a logical flag by default <code>FALSE</code>.  Should labels and a main
+      title be drawn to the plot?</p></dd>
 </dl></div>
-    <div class="section level2">
-    <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p>All values for the <code>*nig</code> functions are numeric vectors: 
-<code>d*</code> returns the density,
-<code>p*</code> returns the distribution function,
-<code>q*</code> returns the quantile function, and
-<code>r*</code> generates random deviates.
-    All values have attributes named <code>"param"</code> listing
-    the values of the distributional parameters.</p>
-    </div>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
     
-  
-<p>The random deviates are calculated with the method described by 
-    Raible (2000).</p>
+
+<p>The parameters <code>alpha, beta, delta, mu</code> are in the first
+  parameterization of the distribution.</p>  
+<p>The random deviates are calculated with the method described by
+  Raible (2000).</p>
+    </div>
+    <div class="section level2">
+    <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
+    <p><code>dnig</code> gives the density,
+<code>pnig</code> gives the distribution function,
+<code>qnig</code> gives the quantile function, and
+<code>rnig</code> generates random deviates.
+  Each function returns a numeric vector with attribute <code>"param"</code>  containing the parameters of the distribution.
+<strong>GNB TODO:</strong> It seems that only <code>rnig</code> has an attribute and
+  that is called <code>"control"</code> (but it indeed contains the
+  parameters).</p>
     </div>
     <div class="section level2">
     <h2 id="author">Author<a class="anchor" aria-label="anchor" href="#author"></a></h2>

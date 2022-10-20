@@ -9,7 +9,7 @@ basicStatsComputes an overview of basic statistical values.
 
 
     
-"><title>Basic Time Series Statistics — BasicStatistics • fBasics</title><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link href="../deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet"><script src="../deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous"><!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Basic Time Series Statistics — BasicStatistics"><meta property="og:description" content="
+"><title>Basic time series statistics — BasicStatistics • fBasics</title><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link href="../deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet"><script src="../deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous"><!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Basic time series statistics — BasicStatistics"><meta property="og:description" content="
     
 Computes basic financial time series statististics.
     
@@ -54,7 +54,7 @@ basicStatsComputes an overview of basic statistical values.
 </nav><div class="container template-reference-topic">
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
-      <img src="" class="logo" alt=""><h1>Basic Time Series Statistics</h1>
+      <img src="" class="logo" alt=""><h1>Basic time series statistics</h1>
       
       <div class="d-none name"><code>stats-basicStats.Rd</code></div>
     </div>
@@ -74,46 +74,82 @@ basicStatsComputes an overview of basic statistical values.
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
-    <dl><dt>ci</dt>
-<dd><p>confidence interval, a numeric value, by default 0.95, 
-        i.e. 95 percent.</p></dd>
-<dt>x</dt>
-<dd><p>an object of class <code>"timeSeries"</code> or any other object which
-        can be transformed by the function <code>as.timeSeries</code> into an
-        object of class <code>timeSeries</code>. The latter case, other then
-        <code>timeSeries</code> objects, is more or less untested.</p></dd>
+    <dl><dt>x</dt>
+<dd>
+
+<p>an object of class <code>"timeSeries"</code> or any other object which can
+    be transformed by the function <code>as.timeSeries</code> into an object
+    of class <code>"timeSeries"</code>. The latter case, other than
+    <code>"timeSeries"</code> objects, is more or less untested.</p>
+<p></p></dd>
+<dt>ci</dt>
+<dd>
+    
+<p>confidence interval, a numeric value, by default 0.95, i.e. 95%.</p>    
+<p></p></dd>
 </dl></div>
     <div class="section level2">
+    <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
+    
+
+<p>Computes a number of sample statistics for each column of
+  <code>x</code>. The statistics should be clear from the row names of the
+  returned data frame.</p>
+<p><code>"LCL"</code> and <code>"UCL"</code> stand for lower/upper confidence limits,
+  computed under the null hypothesis of i.i.d.</p>
+<p><code>"Kurtosis"</code> represents the <em>excess kurtosis</em>, so its
+  theoretical value for the normal distribution is zero, not 3.</p>
+<p>These statistics are often computed as a first step in the study of
+  returns on financial assets. In that case any inference on these
+  statistics (including the confidence intervals for the mean) should be
+  considered exploratory, since returns are virtually never i.i.d.</p>
+    </div>
+    <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p><code>basicsStats</code><br>    returns a data frame with the following entries and row names:
-    nobs, NAs, Minimum, Maximum , 1. Quartile, 3. Quartile,
-    Mean, Median, Sum, SE Mean, LCL Mean, UCL Mean, Variance,
-    Stdev, Skewness, Kurtosis.</p>
+    <p>a data frame with one column for each column of <code>x</code> and the
+  following row names:
+<code>"nobs"</code>,
+<code>"NAs"</code>,
+<code>"Minimum"</code>,
+<code>"Maximum "</code>,
+<code>"1. Quartile"</code>,
+<code>"3. Quartile"</code>,
+<code>"Mean"</code>,
+<code>"Median"</code>,
+<code>"Sum"</code>,
+<code>"SE Mean"</code>,
+<code>"LCL Mean"</code>,
+<code>"UCL Mean"</code>,
+<code>"Variance"</code>,
+<code>"Stdev"</code>,
+<code>"Skewness"</code>,
+<code>"Kurtosis"</code>.</p>
     </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">## basicStats -</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">1234</span><span class="op">)</span></span>
+<span class="r-in"><span class="co">## basicStats -</span></span>
 <span class="r-in">   <span class="co"># Simulated Monthly Return Data:</span></span>
 <span class="r-in">   <span class="va">tS</span> <span class="op">=</span> <span class="fu">timeSeries</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/matrix.html" class="external-link">matrix</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">12</span><span class="op">)</span><span class="op">)</span>, <span class="fu">timeDate</span><span class="fu">::</span><span class="fu"><a href="https://geobosh.github.io/timeDateDoc/reference/timeDate-Calendar.html" class="external-link">timeCalendar</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span class="r-in">   <span class="fu">basicStats</span><span class="op">(</span><span class="va">tS</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                  TS.1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> nobs        12.000000</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> NAs          0.000000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Minimum     -1.853133</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Maximum      2.061269</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1. Quartile -0.616955</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3. Quartile  0.704696</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Mean         0.165781</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Median       0.492461</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Sum          1.989370</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> SE Mean      0.335319</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> LCL Mean    -0.572252</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> UCL Mean     0.903814</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Variance     1.349268</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Stdev        1.161580</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Skewness    -0.051765</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Kurtosis    -1.177763</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Minimum     -2.345698</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Maximum      1.084441</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1. Quartile -0.917125</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3. Quartile  0.315353</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Mean        -0.442263</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Median      -0.555542</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Sum         -5.307153</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> SE Mean      0.265001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> LCL Mean    -1.025526</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> UCL Mean     0.141000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Variance     0.842706</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Stdev        0.917990</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Skewness    -0.233217</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Kurtosis    -0.571935</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

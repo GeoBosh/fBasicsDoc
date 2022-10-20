@@ -142,6 +142,12 @@
     <loc>https://geobosh.github.io/fBasicsDoc/reference/fBasics-reexports.html</loc>
   </url>
   <url>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/fDISTFIT-class.html</loc>
+  </url>
+  <url>
+    <loc>https://geobosh.github.io/fBasicsDoc/reference/fHTEST-class.html</loc>
+  </url>
+  <url>
     <loc>https://geobosh.github.io/fBasicsDoc/reference/index.html</loc>
   </url>
   <url>
@@ -238,9 +244,6 @@
     <loc>https://geobosh.github.io/fBasicsDoc/reference/test-correlationTest.html</loc>
   </url>
   <url>
-    <loc>https://geobosh.github.io/fBasicsDoc/reference/test-fHTEST.html</loc>
-  </url>
-  <url>
     <loc>https://geobosh.github.io/fBasicsDoc/reference/test-ks2Test.html</loc>
   </url>
   <url>
@@ -286,13 +289,7 @@
     <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-interactivePlot.html</loc>
   </url>
   <url>
-    <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-listDescription.html</loc>
-  </url>
-  <url>
     <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-listFunctions.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-listIndex.html</loc>
   </url>
   <url>
     <loc>https://geobosh.github.io/fBasicsDoc/reference/utils-printControl.html</loc>

@@ -36,7 +36,7 @@ normalTesttest suite for some normality tests.
 
 
 
-"><title>Normality Tests — NormalityTests • fBasics</title><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link href="../deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet"><script src="../deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous"><!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Normality Tests — NormalityTests"><meta property="og:description" content="
+"><title>Normality tests — NormalityTests • fBasics</title><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link href="../deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet"><script src="../deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous"><!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Normality tests — NormalityTests"><meta property="og:description" content="
 
 A collection and description of functions of one
     sample tests for testing normality of financial
@@ -108,7 +108,7 @@ normalTesttest suite for some normality tests.
 </nav><div class="container template-reference-topic">
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
-      <img src="" class="logo" alt=""><h1>Normality Tests</h1>
+      <img src="" class="logo" alt=""><h1>Normality tests</h1>
       
       <div class="d-none name"><code>test-normalityTests.Rd</code></div>
     </div>
@@ -169,58 +169,71 @@ normalTesttest suite for some normality tests.
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p>In contrast to R's output report from S3 objects of class <code>"htest"</code>    a different output report is produced. The tests here return an S4
-    object of class <code>"fHTEST"</code>. The object contains the following slots:</p>
-<dl><dt>@call</dt>
-<dd><p>the function call.</p></dd>
-<dt>@data</dt>
-<dd><p>the data as specified by the input argument(s).</p></dd>
-<dt>@test</dt>
-<dd><p>a list whose elements contain the results from the statistical
-        test. The information provided is similar to a list object of
-        class <code>"htest"</code>.</p></dd>
-<dt>@title</dt>
-<dd><p>a character string with the name of the test. This can be
-        overwritten specifying a user defined input argument.</p></dd>
-<dt>@description</dt>
-<dd><p>a character string with an optional user defined description.
-        By default just the current date when the test was applied will
-        be returned.</p></dd>
-</dl><p>The slot <code>@test</code> returns an object of class <code>"list"</code>    containing the following (otionally empty) elements:</p>
-<dl><dt>statistic</dt>
-<dd><p>the value(s) of the test statistic.</p></dd>
-<dt>p.value</dt>
-<dd><p>the p-value(s) of the test.</p></dd>
-<dt>parameters</dt>
-<dd><p>a numeric value or vector of parameters.</p></dd>
-<dt>estimate</dt>
-<dd><p>a numeric value or vector of sample estimates.</p></dd>
-<dt>conf.int</dt>
-<dd><p>a numeric two row vector or matrix of 95<!-- % confidence levels. --></p></dd>
-<dt>method</dt>
-<dd><p>a character string indicating what type of test was performed.</p></dd>
-<dt>data.name</dt>
-<dd><p>a character string giving the name(s) of the data.</p></dd>
-</dl><p>The meaning of the elements of the <code>@test</code> slot is the following:
-<code>ksnormTest</code><br>    returns the values for the 'D' statistic and p-values for the three
-    alternatives 'two-sided, 'less' and 'greater'.
-<code>shapiroTest</code><br>    returns the values for the 'W' statistic and the p-value.
-<code>jarqueberaTest</code><br><code>jbTest</code><br>    returns the values for the 'Chi-squared' statistic with 2 degrees of
-    freedom, and the asymptotic p-value. <code>jbTest</code> is the finite sample
-    version of the Jarque Bera Lagrange multiplier, LM, and adjusted
-    Lagrange multiplier test, ALM.
-<code>dagoTest</code><br>    returns the values for the 'Chi-squared', the 'Z3' (Skewness) and 'Z4'
-    (Kurtosis) statistic together with the corresponding p values.
-<code>adTest</code><br>    returns the value for the 'A' statistic and the p-value.
-<code>cvmTest</code><br>    returns the value for the 'W' statistic and the p-value.
-<code>lillieTest</code><br>    returns the value for the 'D' statistic and the p-value.
-<code>pchiTest</code><br>    returns the value for the 'P' statistic and the p-values for the
-    adjusted and not adjusted test cases.  In addition the number of
-    classes is printed, taking the default value due to Moore (1986)
-    computed from the expression <code>n.classes = ceiling(2 * (n^(2/5)))</code>,
-    where <code>n</code> is the number of observations.
-<code>sfTest</code><br>    returns the value for the 'W' statistic and the p-value.</p>
-    </div>
+    <p>an object from class <code><a href="fHTEST-class.html">fHTEST</a></code>  Slot <code>test</code> is a list containing the following (optionally empty)
+  elements (in addition to those described in <code><a href="fHTEST-class.html">fHTEST</a></code>):</p><dl><dt>ksnormTest</dt>
+<dd>
+
+<p>the 'D' statistic and p-values for the three alternatives
+      'two-sided, 'less' and 'greater'.</p>
+<p></p></dd>
+
+    <dt>shapiroTest</dt>
+<dd>
+      
+<p>the 'W' statistic and the p-value.</p>
+<p></p></dd>
+
+    <dt>jarqueberaTest</dt>
+<dd></dd>
+
+    <dt>jbTest</dt>
+<dd>
+      
+<p>the 'Chi-squared' statistic with 2 degrees of freedom and the
+      asymptotic p-value. <code>jbTest</code> is the finite sample version of
+      the Jarque Bera Lagrange multiplier, LM, and adjusted Lagrange
+      multiplier test, ALM.</p>
+<p></p></dd>
+
+    <dt>dagoTest</dt>
+<dd>
+
+<p>the 'Chi-squared', the 'Z3' (Skewness) and 'Z4' (Kurtosis)
+      statistic together with the corresponding p values.</p>
+<p></p></dd>
+
+    <dt>adTest</dt>
+<dd>
+      
+<p>the 'A' statistic and the p-value.</p>
+<p></p></dd>
+
+    <dt>cvmTest</dt>
+<dd>
+      
+<p>the 'W' statistic and the p-value.</p>
+<p></p></dd>
+
+    <dt>lillieTest</dt>
+<dd><p>the 'D' statistic and the p-value.</p></dd>
+
+
+    <dt>pchiTest</dt>
+<dd>
+      
+<p>the value for the 'P' statistic and the p-values for the adjusted
+      and not adjusted test cases.  In addition the number of classes is
+      printed, taking the default value due to Moore (1986) computed
+      from the expression <code>n.classes = ceiling(2 * (n^(2/5)))</code>,
+      where <code>n</code> is the number of observations.</p>
+<p></p></dd>
+
+    <dt>sfTest</dt>
+<dd><p>the 'W' statistic and the p-value.</p></dd>
+
+
+  
+</dl></div>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
     
@@ -327,7 +340,8 @@ normalTesttest suite for some normality tests.
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">## Series:</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">1234</span><span class="op">)</span></span>
+<span class="r-in"><span class="co">## Series:</span></span>
 <span class="r-in">   <span class="va">x</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">100</span><span class="op">)</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">## ksnormTests -</span></span>
@@ -339,14 +353,14 @@ normalTesttest suite for some normality tests.
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   STATISTIC:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>     D: 0.1162</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     D: 0.055</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   P VALUE:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>     Alternative Two-Sided: 0.1341 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>     Alternative      Less: 0.06709 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>     Alternative   Greater: 0.7917 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     Alternative Two-Sided: 0.9224 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     Alternative      Less: 0.6972 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     Alternative   Greater: 0.5456 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Description:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  Mon Oct 17 16:07:09 2022 by user: georgi</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Thu Oct 20 12:12:20 2022 by user: georgi</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">## shapiroTest - Shapiro-Wilk Test</span></span>
@@ -357,12 +371,12 @@ normalTesttest suite for some normality tests.
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   STATISTIC:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>     W: 0.9817</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     W: 0.9905</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   P VALUE:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>     0.18 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     0.7034 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Description:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  Mon Oct 17 16:07:09 2022 by user: georgi</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Thu Oct 20 12:12:20 2022 by user: georgi</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">## jarqueberaTest -</span></span>
