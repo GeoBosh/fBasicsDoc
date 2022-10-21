@@ -61,7 +61,7 @@ Tests if two series are correlated."><!-- mathjax --><script src="https://cdnjs.
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
-    <dl><dt>x, y</dt>
+    <dl><dt>x,y</dt>
 <dd><p>numeric vectors of data values.</p></dd>
 
   <dt>method</dt>
@@ -79,10 +79,20 @@ Tests if two series are correlated."><!-- mathjax --><script src="https://cdnjs.
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
     
-     
-<p>The function <code>correlationTest</code> tests for association between
-  paired samples allowing to compute Pearson's product moment
-  correlation coefficient, Kendall's tau, or Spearman's rho.</p>
+
+<p>These functions test for association/correlation between paired
+  samples based on the Pearson's product moment correlation coefficient
+  (a.k.a. sample correlation), Kendall's tau, and Spearman's rho
+  coefficients.</p>    
+<p><code>pearsonTest</code>, <code>kendallTest</code>, and <code>spearmanTest</code> are
+  wrappers of base R's <code><a href="https://rdrr.io/r/stats/cor.test.html" class="external-link">cor.test</a></code> with simplified
+  interface.  They provide 'exact' and approximate p-values for all
+  three alternatives (two-sided, less, and greater), as well as 95%
+  confidence intervals. This is particularly convenient in interactive
+  use.</p>
+<p>Instead of calling the individual functions, one can use
+  <code>correlationTest</code> and specify the required test with argument
+  <code>method</code>.</p>
     </div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
@@ -91,13 +101,6 @@ Tests if two series are correlated."><!-- mathjax --><script src="https://cdnjs.
 <p>an object from class <code><a href="fHTEST-class.html">fHTEST</a></code></p>
 
 
-    </div>
-    <div class="section level2">
-    <h2 id="note">Note<a class="anchor" aria-label="anchor" href="#note"></a></h2>
-    
-
-<p>Some of the test implementations are selected from package
-    <code>ctest</code>.</p>
     </div>
     <div class="section level2">
     <h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a></h2>
@@ -109,13 +112,6 @@ Tests if two series are correlated."><!-- mathjax --><script src="https://cdnjs.
 <p>Lehmann E.L. (1986); 
     <em>Testing Statistical Hypotheses</em>, 
     John Wiley and Sons, New York.</p>
-    </div>
-    <div class="section level2">
-    <h2 id="author">Author<a class="anchor" aria-label="anchor" href="#author"></a></h2>
-    
-
-<p>R-core team for hypothesis tests implemented from <span style="R">R</span>'s 
-    package <code>ctest</code>.</p>
     </div>
     <div class="section level2">
     <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
@@ -157,9 +153,6 @@ Tests if two series are correlated."><!-- mathjax --><script src="https://cdnjs.
 <span class="r-out co"><span class="r-pr">#&gt;</span>          Less: -1, 0.4728</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>       Greater: 0.0337, 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Description:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  Thu Oct 20 19:48:43 2022</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in">   <span class="fu">correlationTest</span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span>, <span class="st">"kendall"</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Title:</span>
@@ -179,9 +172,6 @@ Tests if two series are correlated."><!-- mathjax --><script src="https://cdnjs.
 <span class="r-out co"><span class="r-pr">#&gt;</span>     Alternative           Greater: 0.05506 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     Alternative   Greater | Exact: 0.05615 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Description:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  Thu Oct 20 19:48:43 2022</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in">   <span class="fu">spearmanTest</span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Title:</span>
@@ -196,9 +186,6 @@ Tests if two series are correlated."><!-- mathjax --><script src="https://cdnjs.
 <span class="r-out co"><span class="r-pr">#&gt;</span>     Alternative Two-Sided: 0.1011 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     Alternative      Less: 0.9495 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     Alternative   Greater: 0.05053 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Description:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  Thu Oct 20 19:48:43 2022</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 </code></pre></div>
     </div>
