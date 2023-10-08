@@ -4,7 +4,7 @@
 Utilities to list and count exported functions in a package, 
   list the contents of the description file of a package, and    
 Prints the content of an index file for a package (a list of the
-  objects exported by a package)."><title>List exported functions in a package — listFunctions • fBasics</title><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link href="../deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet"><script src="../deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous"><!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="List exported functions in a package — listFunctions"><meta property="og:description" content="
+  objects exported by a package)."><title>List exported functions in a package — listFunctions • fBasics</title><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link href="../deps/bootstrap-5.2.2/bootstrap.min.css" rel="stylesheet"><script src="../deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous"><!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="List exported functions in a package — listFunctions"><meta property="og:description" content="
 
 Utilities to list and count exported functions in a package, 
   list the contents of the description file of a package, and    
@@ -20,7 +20,7 @@ Prints the content of an index file for a package (a list of the
     
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4021.94</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4031.95</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,10 +60,10 @@ Prints the content of an index file for a package (a list of the
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">listFunctions</span><span class="op">(</span><span class="va">package</span>, character.only <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span>
-<span class="fu">countFunctions</span><span class="op">(</span><span class="va">package</span>, character.only <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span>
-
-<span class="fu">listIndex</span><span class="op">(</span><span class="va">package</span>, character.only <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">listFunctions</span><span class="op">(</span><span class="va">package</span>, character.only <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
+<span><span class="fu">countFunctions</span><span class="op">(</span><span class="va">package</span>, character.only <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">listIndex</span><span class="op">(</span><span class="va">package</span>, character.only <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -114,8 +114,8 @@ Prints the content of an index file for a package (a list of the
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">## listFunctions -</span></span>
-<span class="r-in">   <span class="fu">listFunctions</span><span class="op">(</span><span class="st">"fBasics"</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">## listFunctions -</span></span></span>
+<span class="r-in"><span>   <span class="fu">listFunctions</span><span class="op">(</span><span class="st">"fBasics"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   [1] ".acfPlot"             ".contourPlot"         ".distCheck"          </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   [4] ".firePlot"            ".mrlPlot"             ".pacfPlot"           </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   [7] ".perspPlot"           ".plot"                ".predict"            </span>
@@ -158,56 +158,55 @@ Prints the content of an index file for a package (a list of the
 <span class="r-out co"><span class="r-pr">#&gt;</span> [118] "jbTest"               "kendallTest"          "krigeInterp"         </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [121] "kron"                 "ks2Test"              "ksnormTest"          </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [124] "kurtosis"             "lacfPlot"             "lillieTest"          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [127] "linearInterp"         "linearInterpp"        "listDescription"     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [130] "listFunctions"        "listIndex"            "locationTest"        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [133] "logDensityPlot"       "makePositiveDefinite" "maxddStats"          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [136] "monoPalette"          "nFit"                 "nigFit"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [139] "nigIQR"               "nigKURT"              "nigKurt"             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [142] "nigMED"               "nigMean"              "nigMode"             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [145] "nigMoments"           "nigSKEW"              "nigShapeTriangle"    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [148] "nigSkew"              "nigSlider"            "nigVar"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [151] "norm2"                "normIQR"              "normKURT"            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [154] "normMED"              "normSKEW"             "normalTest"          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [157] "pacfPlot"             "pascal"               "pchiTest"            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [160] "pdl"                  "pearsonTest"          "pgh"                 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [163] "pght"                 "pgld"                 "phyp"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [166] "pmaxdd"               "pnig"                 "psgh"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [169] "psght"                "psnig"                "pssd"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [172] "qgh"                  "qght"                 "qgld"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [175] "qhyp"                 "qnig"                 "qqghtPlot"           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [178] "qqgldPlot"            "qqnigPlot"            "qqnormPlot"          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [181] "qsgh"                 "qsght"                "qsnig"               </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [184] "qssd"                 "qualiPalette"         "rainbowPalette"      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [187] "rampPalette"          "returnPlot"           "returnSeriesGUI"     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [190] "returns"              "rgh"                  "rght"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [193] "rgld"                 "rhyp"                 "rk"                  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [196] "rmaxdd"               "rnig"                 "rnorm.lcg"           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [199] "rowAvgs"              "rowIds"               "rowIds&lt;-"            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [202] "rowKurtosis"          "rowMaxs"              "rowMins"             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [205] "rowProds"             "rowQuantiles"         "rowSds"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [208] "rowSkewness"          "rowStats"             "rowStdevs"           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [211] "rowVars"              "rowVec"               "rsgh"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [214] "rsght"                "rsnig"                "rssd"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [217] "rt.lcg"               "runif.lcg"            "sampleIQR"           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [220] "sampleKURT"           "sampleLmoments"       "sampleMED"           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [223] "sampleSKEW"           "scaleTest"            "scalinglawPlot"      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [226] "seqPalette"           "seriesPlot"           "set.lcgseed"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [229] "sfTest"               "sghFit"               "shapiroTest"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [232] "show"                 "skewness"             "snigFit"             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [235] "spearmanTest"         "ssdFit"               "stableFit"           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [238] "stableSlider"         "stdev"                "symbolTable"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [241] "tFit"                 "teffectPlot"          "termPlot"            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [244] "terrainPalette"       "timPalette"           "timeSeries"          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [247] "topoPalette"          "tr"                   "triang"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [250] "tsHessian"            "tslag"                "varianceTest"        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [253] "vec"                  "vech"                 "vgrid"               </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [256] "volatility"          </span>
-<span class="r-in">   </span>
-<span class="r-in"><span class="co">## countFunctions -</span></span>
-<span class="r-in">   <span class="fu">countFunctions</span><span class="op">(</span><span class="st">"fBasics"</span><span class="op">)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [127] "linearInterp"         "linearInterpp"        "listFunctions"       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [130] "listIndex"            "locationTest"         "logDensityPlot"      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [133] "makePositiveDefinite" "maxddStats"           "monoPalette"         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [136] "nFit"                 "nigFit"               "nigIQR"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [139] "nigKURT"              "nigKurt"              "nigMED"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [142] "nigMean"              "nigMode"              "nigMoments"          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [145] "nigSKEW"              "nigShapeTriangle"     "nigSkew"             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [148] "nigSlider"            "nigVar"               "norm2"               </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [151] "normIQR"              "normKURT"             "normMED"             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [154] "normSKEW"             "normalTest"           "pacfPlot"            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [157] "pascal"               "pchiTest"             "pdl"                 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [160] "pearsonTest"          "pgh"                  "pght"                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [163] "pgld"                 "phyp"                 "pmaxdd"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [166] "pnig"                 "psgh"                 "psght"               </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [169] "psnig"                "pssd"                 "qgh"                 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [172] "qght"                 "qgld"                 "qhyp"                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [175] "qnig"                 "qqghtPlot"            "qqgldPlot"           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [178] "qqnigPlot"            "qqnormPlot"           "qsgh"                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [181] "qsght"                "qsnig"                "qssd"                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [184] "qualiPalette"         "rainbowPalette"       "rampPalette"         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [187] "returnPlot"           "returnSeriesGUI"      "returns"             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [190] "rgh"                  "rght"                 "rgld"                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [193] "rhyp"                 "rk"                   "rmaxdd"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [196] "rnig"                 "rnorm.lcg"            "rowAvgs"             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [199] "rowIds"               "rowIds&lt;-"             "rowKurtosis"         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [202] "rowMaxs"              "rowMins"              "rowProds"            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [205] "rowQuantiles"         "rowSds"               "rowSkewness"         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [208] "rowStats"             "rowStdevs"            "rowVars"             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [211] "rowVec"               "rsgh"                 "rsght"               </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [214] "rsnig"                "rssd"                 "rt.lcg"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [217] "runif.lcg"            "sampleIQR"            "sampleKURT"          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [220] "sampleLmoments"       "sampleMED"            "sampleSKEW"          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [223] "scaleTest"            "scalinglawPlot"       "seqPalette"          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [226] "seriesPlot"           "set.lcgseed"          "sfTest"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [229] "sghFit"               "shapiroTest"          "show"                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [232] "skewness"             "snigFit"              "spearmanTest"        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [235] "ssdFit"               "stableFit"            "stableSlider"        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [238] "stdev"                "symbolTable"          "tFit"                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [241] "teffectPlot"          "termPlot"             "terrainPalette"      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [244] "timPalette"           "timeSeries"           "topoPalette"         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [247] "tr"                   "triang"               "tsHessian"           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [250] "tslag"                "varianceTest"         "vec"                 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [253] "vech"                 "vgrid"                "volatility"          </span>
+<span class="r-in"><span>   </span></span>
+<span class="r-in"><span><span class="co">## countFunctions -</span></span></span>
+<span class="r-in"><span>   <span class="fu">countFunctions</span><span class="op">(</span><span class="st">"fBasics"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> fBasics </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>     256 </span>
-<span class="r-in"></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     255 </span>
+<span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
@@ -219,7 +218,7 @@ Prints the content of an index file for a package (a list of the
 </div>
 
 <div class="pkgdown-footer-right">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
     </footer></div>
