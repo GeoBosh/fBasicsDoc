@@ -14,7 +14,7 @@ Calculates moments of the hyperbolic distribution function."><!-- mathjax --><sc
     
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4031.95</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4032.96</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,28 +62,42 @@ Calculates moments of the hyperbolic distribution function."><!-- mathjax --><sc
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
-    <dl><dt>alpha, beta, delta, mu</dt>
-<dd><p>numeric values.
-        <code>alpha</code> is the first shape parameter;
-        <code>beta</code> is the second shape parameter in the range <code>(0, alpha)</code>;
-        <code>delta</code> is the scale parameter, must be zero or positive; 
-        <code>mu</code> is the location parameter, by default 0.</p></dd>
+    <dl><dt>alpha</dt>
+<dd><p>numeric value, the first shape parameter.</p></dd>
 
-    <dt>order</dt>
+  <dt>beta</dt>
+<dd><p>numeric value, the second shape parameter in the range <code>(0, alpha)</code>.</p></dd>
+
+  <dt>delta</dt>
+<dd><p>numeric value, the scale parameter, must be zero or positive.</p></dd>
+
+  <dt>mu</dt>
+<dd><p>numeric value, the location parameter, by default 0.</p></dd>
+
+  <dt>order</dt>
 <dd><p>an integer value, the order of the moment.</p></dd>
 
-    <dt>type</dt>
-<dd><p>a character value, 
-        <code>"raw"</code> returns the moments about zero,
-        <code>"central"</code> returns the central moments about the mean, and
-        <code>"mu"</code> returns the moments about the location parameter <code>mu</code>.</p></dd>
+  <dt>type</dt>
+<dd><p>a character string, 
+    <code>"raw"</code> returns the moments about zero,
+    <code>"central"</code> returns the central moments about the mean, and
+    <code>"mu"</code> returns the moments about the location parameter <code>mu</code>.</p></dd>
     
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
     
 
-<p>a numerical value</p>
+
+<p>a named numerical value.  The name is one
+  of <code>mean</code>, <code>var</code>, <code>skew</code>, or <code>kurt</code>, obtained by
+  dropping the <code>hyp</code> prefix from the name of the corresponding
+  function and lowercasing it.</p>
+
+
+<p>for <code>hypMoments</code>, the name is obtained by <code>paste0("m", order, type)</code>.</p>
+
+
     </div>
     <div class="section level2">
     <h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a></h2>
@@ -93,26 +107,28 @@ Calculates moments of the hyperbolic distribution function."><!-- mathjax --><sc
     </div>
     <div class="section level2">
     <h2 id="author">Author<a class="anchor" aria-label="anchor" href="#author"></a></h2>
-    
-
-<p>Diethelm Wuertz.</p>
+    <p>Diethelm Wuertz</p>
     </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">## hypMean -</span></span></span>
 <span class="r-in"><span>   <span class="fu">hypMean</span><span class="op">(</span>alpha<span class="op">=</span><span class="fl">1.1</span>, beta<span class="op">=</span><span class="fl">0.1</span>, delta<span class="op">=</span><span class="fl">0.8</span>, mu<span class="op">=</span><span class="op">-</span><span class="fl">0.3</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.08410502</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>        mean </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> -0.08410502 </span>
 <span class="r-in"><span>   </span></span>
 <span class="r-in"><span><span class="co">## ghKurt -</span></span></span>
 <span class="r-in"><span>   <span class="fu">hypKurt</span><span class="op">(</span>alpha<span class="op">=</span><span class="fl">1.1</span>, beta<span class="op">=</span><span class="fl">0.1</span>, delta<span class="op">=</span><span class="fl">0.8</span>, mu<span class="op">=</span><span class="op">-</span><span class="fl">0.3</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 2.044599</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     kurt </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2.044599 </span>
 <span class="r-in"><span>   </span></span>
 <span class="r-in"><span><span class="co">## hypMoments -</span></span></span>
 <span class="r-in"><span>   <span class="fu">hypMoments</span><span class="op">(</span><span class="fl">4</span>, alpha<span class="op">=</span><span class="fl">1.1</span>, beta<span class="op">=</span><span class="fl">0.1</span>, delta<span class="op">=</span><span class="fl">0.8</span>, mu<span class="op">=</span><span class="op">-</span><span class="fl">0.3</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 23.96634</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    m4raw </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 23.96634 </span>
 <span class="r-in"><span>   <span class="fu">hypMoments</span><span class="op">(</span><span class="fl">4</span>, <span class="st">"central"</span>, alpha<span class="op">=</span><span class="fl">1.1</span>, beta<span class="op">=</span><span class="fl">0.1</span>, delta<span class="op">=</span><span class="fl">0.8</span>, mu<span class="op">=</span><span class="op">-</span><span class="fl">0.3</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 24.18639</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> m4central </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  24.18639 </span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

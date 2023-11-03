@@ -16,7 +16,7 @@ Tests if two series are distributionally equivalent using two sample
     
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4031.95</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4032.96</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,16 +76,16 @@ Tests if two series are distributionally equivalent using two sample
     
      
 <p>The test <code>ks2Test</code> performs a Kolmogorov-Smirnov two sample
-    test that the two data samples, <code>x</code> and <code>y</code>, come from the
-    same distribution, not necessarily a normal distribution. That means
-    that it is not specified what that common distribution is.</p>
+  test that the two data samples, <code>x</code> and <code>y</code>, come from the
+  same distribution, not necessarily a normal distribution. That means
+  that it is not specified what that common distribution is.</p>
 <p><code>ks2Test</code> calls several times base R's <code><a href="https://rdrr.io/r/stats/ks.test.html" class="external-link">ks.test</a></code>
-    p-values for all three alternatives (two-sided, less, and greater),
-    as well as the exact p-value for the two-sided case.</p>
+  p-values for all three alternatives (two-sided, less, and greater),
+  as well as the exact p-value for the two-sided case.</p>
 <p>Note that the p-values are computed under a hypothesis of i.i.d.,
-    which is rarely the case for time series. So, the results should be
-    interpreted cautiosly if that is the case. The same applies when the
-    data are residuals from fitted models.</p>
+  which is rarely the case for time series. So, the results should be
+  interpreted cautiosly if that is the case. The same applies when the
+  data are residuals from fitted models.</p>
     </div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>

@@ -16,7 +16,7 @@ Computes the first four moments for the
     
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4031.95</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4032.96</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,34 +62,30 @@ Computes the first four moments for the
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
-    <dl><dt>alpha, beta, delta, mu</dt>
-<dd><p>are numeric values where
-        <code>alpha</code> is the location parameter,
-        <code>beta</code> is the location parameter,
-        <code>delta</code> is the first shape parameter, and
-        <code>mu</code> is the second shape parameter.</p></dd>
+    <dl><dt>alpha</dt>
+<dd><p>shape parameter.</p></dd>
 
-    
+    <dt>beta</dt>
+<dd><p>skewness parameter <code>beta</code>, <code>abs(beta)</code> is in the range
+      <code>(0, alpha)</code>.</p></dd>
+
+    <dt>delta</dt>
+<dd><p>scale parameter, must be zero or positive.</p></dd>
+
+    <dt>mu</dt>
+<dd><p>location parameter, by default 0.</p></dd>
+
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
     
 
 
-<p>All values for the <code>*nig</code> functions are numeric vectors:</p>
-<p></p>
-<p><code>d*</code> returns the density,</p>
-<p></p>
-<p><code>p*</code> returns the distribution function,</p>
-<p></p>
-<p><code>q*</code> returns the quantile function, and</p>
-<p></p>
-<p><code>r*</code> generates random deviates.</p>
-    
-
-<p>All values have attributes named <code>"param"</code> listing
-    the values of the distributional parameters.</p>
-    
+<p>a named numerical value.  The name is one
+  of <code>mean</code>, <code>var</code>, <code>skew</code>, or <code>kurt</code>, obtained by
+  dropping the <code>nig</code> prefix from the name of the corresponding
+  function and lowercasing it.</p>
+  
 
     </div>
     <div class="section level2">
@@ -100,9 +96,7 @@ Computes the first four moments for the
     </div>
     <div class="section level2">
     <h2 id="author">Author<a class="anchor" aria-label="anchor" href="#author"></a></h2>
-    
-
-<p>Diethelm Wuertz.</p>
+    <p>Diethelm Wuertz.</p>
     </div>
 
     <div class="section level2">

@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4031.95</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4032.96</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,6 +39,19 @@
     </div>
 
     <div class="section level2">
+<h2 class="pkg-version" data-toc-text="4032.96" id="fbasics-403296">fBasics 4032.96<a class="anchor" aria-label="anchor" href="#fbasics-403296"></a></h2>
+<ul><li><p>modified <code>interactivePlot</code> to allow also functions in argument <code>plotFun</code>. Previously <code>plotFun</code> had to be a character vector containing the names of the functions. Adjusted the documentation and added an example to this effect.</p></li>
+<li><p>function <code>.distCheck</code> is defunct, use <code>distCheck</code> instead. To allow compatibility with older versions of packages that import fBasics (fGarch, fExtremes), <code>.distCheck</code> is exported but new code should not use it.</p></li>
+<li><p>removed generic <code>.print</code>, its ‘ssd’ method, and the S3 registration for the latter, all unused.</p></li>
+<li><p>clarified in the documentation for <code>histPlot</code>, <code>densityPlot</code> and <code>logDensityPlot</code> that argument <code>x</code> must be from class “timeSeries” (each of them starts with <code>stopifnot(is.timeSeries(x))</code>). Previously it was stated that argument <code>x</code> can be of any class that can be converted to “timeSeries” with <code>as.timeSeries</code>.</p></li>
+<li><p>contrary to the documentation, the return values from the  functions (such as <code>dhyp</code>, <code>phyp</code>, <code>qhyp</code>) for the generalised distributions do not contain attribute . This is now documented correctly.</p></li>
+<li><p>removed attribute ‘control’ from the return value of <code>rhyp</code> and similar functions. It was undocumented (or rather, the documentation stated that it is called “param”; in any case, wouldn’t be usable in code).</p></li>
+<li><p>argument ‘alpha’ of <code>dhyp</code>, <code>phyp</code>, <code>qhyp</code> and <code>rhyp</code> can now be also a vector of length 4 containing the four parameters.</p></li>
+<li><p><code>hypMode</code> now throws error if argument ‘pm’ doesn’t have one of the allowed values.</p></li>
+<li><p>the return values of<code>*Mean()</code>, <code>*Var()</code>, <code>*Skew()</code>, <code>*Kurt()</code>, <code>*Moments()</code>, where ’*’ is a distribution prefix (such as ‘gh’ or ‘ght’), are now all named. Previously, only some of them were.</p></li>
+<li><p>removed a number of inconsistencies in the documentation.</p></li>
+</ul></div>
+    <div class="section level2">
 <h2 class="pkg-version" data-toc-text="4031.95" id="fbasics-403195">fBasics 4031.95<a class="anchor" aria-label="anchor" href="#fbasics-403195"></a></h2><p class="text-muted">CRAN release: 2023-10-08</p>
 <ul><li><p>now <code>characterTable</code> doesn’t try to print/plot invalid non-ASCII UTF8 characters (fixes CRAN issue from around 2023-10-06).</p></li>
 <li><p><code>symbolTable</code> now plots more characters and issues warnings only for characters in <code>26:31</code> which are ignored according to <code><a href="https://rdrr.io/r/graphics/points.html" class="external-link">?points</a></code> but are actually plotted.</p></li>
@@ -49,9 +62,9 @@
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="4022.94" id="fbasics-402294">fBasics 4022.94<a class="anchor" aria-label="anchor" href="#fbasics-402294"></a></h2><p class="text-muted">CRAN release: 2023-03-04</p>
 <ul><li><p><code>dagotest()</code> was returning NaN for the value of the test statistic based on kurtosis when the argument of a cube root was negative. Reported by Cameron Willden who suggested the fix.</p></li>
-<li><p>the name of the first column of dataset <code>msft.dat</code> is not mangled any more (it was “X.Y..m..d” and now is “%Y-%m-%d”, as in the input file). the rest of the dataset is as before. The file from which the dataset is created is now taken from an identical file in package <code>timeSeries</code>.</p></li>
+<li><p>the name of the first column of dataset <code>msft.dat</code> is not mangled any more (it was “X.Y..m..d” and now is “%Y-%m-%d”, as in the input file), the rest of the dataset is as before. The file from which the dataset is created is now taken from an identical file in package <code>timeSeries</code>.</p></li>
 <li><p>the <code>show</code> methods for classes <code>fHTEST</code> and <code>fDISTFIT</code> no longer print ‘Description:’ when slot <code>description = ""</code>.</p></li>
-<li><p>many fitting functions, e.g., <code>nFit</code>, were inadvertently ignoring argument <code>description</code> by using <code>description = description()</code> instead of <code>description =   description</code> in the call to  when creating the return value.</p></li>
+<li><p>many fitting functions, e.g., <code>nFit</code>, were inadvertently ignoring argument <code>description</code> by using <code>description = description()</code> instead of <code>description = description</code> in the call to  when creating the return value.</p></li>
 <li><p><code>correlationTest</code>, <code>pearsonTest</code>, <code>spearmanTest</code>, <code>kendallTest</code>, <code>ks2Test</code>, <code>scaleTest</code>, <code>varianceTest</code>, and <code>locationTest</code> now set slot <code>description</code> of the result to <code>""</code> by default. Previously they were setting it to the current date/time, with the consequence that the functions gave different objects at each run. Use <code>description = date()</code> in the call if you want the date. Similarly for <code>ksnormTest</code>, <code>shapiroTest</code>, <code>jarqueberaTest</code>, <code>dagoTest</code>, <code>normalTest</code>, <code>adTest</code>, <code>cvmTest</code>, <code>lillieTest</code>, <code>pchiTest</code>, <code>sfTest</code>, <code>jbTest</code>, <code>nFit</code>, <code>tFit</code>, <code>stableFit</code>, and many others, which had default setting <code>description = description()</code>.</p></li>
 </ul></div>
     <div class="section level2">

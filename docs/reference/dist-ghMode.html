@@ -14,7 +14,7 @@ Computes the mode of the generalized hyperbolic function."><!-- mathjax --><scri
     
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4031.95</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4032.96</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,37 +56,34 @@ Computes the mode of the generalized hyperbolic function."><!-- mathjax --><scri
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
-    <dl><dt>alpha, beta, delta, mu, lambda</dt>
-<dd><p>shape parameter <code>alpha</code>;
-        skewness parameter <code>beta</code>, <code>abs(beta)</code> is in the 
-        range (0, alpha);
-        scale parameter <code>delta</code>, <code>delta</code> must be zero or 
-        positive; 
-        location parameter <code>mu</code>, by default 0.
-        These is the meaning of the parameters in the first 
-        parameterization <code>pm=1</code> which is the default 
-        parameterization selection.
-        In the second parameterization, <code>pm=2</code> <code>alpha</code>
-        and <code>beta</code> take the meaning of the shape parameters
-        (usually named) <code>zeta</code> and <code>rho</code>.
-        In the third parameterization, <code>pm=3</code> <code>alpha</code>
-        and <code>beta</code> take the meaning of the shape parameters
-        (usually named) <code>xi</code> and <code>chi</code>.
-        In the fourth parameterization, <code>pm=4</code> <code>alpha</code>
-        and <code>beta</code> take the meaning of the shape parameters
-        (usually named) <code>a.bar</code> and <code>b.bar</code>.</p></dd>
+    <dl><dt>alpha</dt>
+<dd><p>first shape parameter.</p></dd>
 
-    
+  <dt>beta</dt>
+<dd><p>second shape parameter, should in the range <code>(0, alpha).</code></p></dd>
+
+  <dt>delta</dt>
+<dd><p>scale parameter, must be zero or positive.</p></dd>
+
+  <dt>mu</dt>
+<dd><p>location parameter, by default 0.</p></dd>
+
+  <dt>lambda</dt>
+<dd><p>defines the sublclass, by default \(-1/2\).</p></dd>
+
 </dl></div>
+    <div class="section level2">
+    <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
+    
+
+<p>The meanings of the parameters correspond to the first
+  parameterization, see <code><a href="dist-gh.html">gh</a></code> for further details.</p>
+    </div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
     
-    
 
-<p>returns the mode for the generalized hyperbolic distribution. 
-    A numeric value.</p>
-    
-
+<p>a numeric value, the mode of the generalized hyperbolic distribution</p>
     </div>
     <div class="section level2">
     <h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a></h2>

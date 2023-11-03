@@ -15,7 +15,7 @@ dagoTestD'Agostino normality test.
 
 Functions for high precision Jarque Bera LM and ALM tests:
 
-jbTestPerforms finite sample adjusted JB LM and ALM test.
+jbTestPerforms finite sample adjusted JB, LM and ALM test.
 
 
 
@@ -51,7 +51,7 @@ dagoTestD'Agostino normality test.
 
 Functions for high precision Jarque Bera LM and ALM tests:
 
-jbTestPerforms finite sample adjusted JB LM and ALM test.
+jbTestPerforms finite sample adjusted JB, LM and ALM test.
 
 
 
@@ -82,7 +82,7 @@ normalTesttest suite for some normality tests.
     
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4031.95</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4032.96</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -119,7 +119,7 @@ normalTesttest suite for some normality tests.
   <br></p>
 <p>The functions for testing normality are:</p>
 <p></p><table class="table table"><tr><td><code>ksnormTest</code></td><td>Kolmogorov-Smirnov normality test,</td></tr><tr><td><code>shapiroTest</code></td><td>Shapiro-Wilk's test for normality,</td></tr><tr><td><code>jarqueberaTest</code></td><td>Jarque-Bera test for normality,</td></tr><tr><td><code>dagoTest</code></td><td>D'Agostino normality test.</td></tr></table><p>Functions for high precision Jarque Bera LM and ALM tests:</p>
-<p></p><table class="table table"><tr><td><code>jbTest</code></td><td>Performs finite sample adjusted JB LM and ALM test.</td></tr></table><p>Additional functions for testing normality from the 'nortest' package:</p>
+<p></p><table class="table table"><tr><td><code>jbTest</code></td><td>Performs finite sample adjusted JB, LM and ALM test.</td></tr></table><p>Additional functions for testing normality from the 'nortest' package:</p>
 <p></p><table class="table table"><tr><td><code>adTest</code></td><td>Anderson--Darling normality test,</td></tr><tr><td><code>cvmTest</code></td><td>Cramer--von Mises normality test,</td></tr><tr><td><code>lillieTest</code></td><td>Lilliefors (Kolmogorov-Smirnov) normality test,</td></tr><tr><td><code>pchiTest</code></td><td>Pearson chi-square normality test,</td></tr><tr><td><code>sfTest</code></td><td>Shapiro-Francia normality test.</td></tr></table><p>For SPlus/Finmetrics Compatibility:</p>
 <p></p><table class="table table"><tr><td><code>normalTest</code></td><td>test suite for some normality tests.</td></tr></table></div>
 
@@ -143,33 +143,73 @@ normalTesttest suite for some normality tests.
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
-    <dl><dt>description</dt>
-<dd><p>optional description string, or a vector of character strings.</p></dd>
+    <dl><dt>x</dt>
+<dd><p>a numeric vector of data values or an S4 object of class
+    <code>"timeSeries"</code>.</p></dd>
 
-    <dt>method</dt>
-<dd><p>[normalTest] - <br>
-        indicates four different methods for the normality test,
-        <code>"ks"</code> for the Kolmogorov-Smirnov one--sample test,
-        <code>"sw"</code> for the Shapiro-Wilk test,
-        <code>"jb"</code> for the Jarque-Bera Test, and
-        <code>"da"</code> for the D'Agostino Test.
-        The default value is <code>"ks"</code>.</p></dd>
+  <dt>title</dt>
+<dd>
 
-    <dt>na.rm</dt>
-<dd><p>[normalTest] - <br>
-        a logical value. Should missing values removed before computing
-        the tests? The default value is <code>FALSE</code>.</p></dd>
+<p>an optional character string, if not specified the inputs data name
+    is deparsed.</p>
+<p></p></dd>
 
-    <dt>title</dt>
-<dd><p>an optional title string, if not specified the inputs data
-        name is deparsed.</p></dd>
+  <dt>description</dt>
+<dd>
 
-    <dt>x</dt>
-<dd><p>a numeric vector of data values or a S4 object of class
-        <code>timeSeries</code>.</p></dd>
+<p>optional description string, or a vector of character strings.</p>
+<p></p></dd>
 
+  <dt>method</dt>
+<dd>
+    
+<p>for <code>normalTest</code> only, indicates one of four different methods
+    for the normality test, one of <code>"ks"</code> (Kolmogorov-Smirnov
+    one-sample test, the the default), <code>"sw"</code> (Shapiro-Wilk test),
+    <code>"jb"</code> (Jarque-Bera Test), and <code>"da"</code> (D'Agostino Test).</p>	
+<p></p></dd>
+
+  <dt>na.rm</dt>
+<dd>
+
+<p>for <code>normalTest</code> only, a logical value. Should missing values
+    removed before computing the tests? The default value is
+    <code>FALSE</code>.</p>    
+<p></p></dd>
 
 </dl></div>
+    <div class="section level2">
+    <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
+    
+
+<p>The hypothesis tests may be of interest for many financial
+    and economic applications, especially for the investigation
+    of univariate time series returns.</p>
+<p>Several tests for testing if the records from a data set are normally
+    distributed are available. The input to all these functions may be
+    just a vector <code>x</code> or a univariate time series object <code>x</code>
+    of class <code>timeSeries</code>.</p>
+<p>First, there exists a wrapper function which allows to call one from
+    two normal tests either the Shapiro--Wilks test or the Jarque--Bera
+    test. This wrapper was introduced for compatibility with S-Plus'
+    FinMetrics package.</p>
+<p>Also available are the Kolmogorov--Smirnov one sample test and the
+    D'Agostino normality test.</p>
+<p>The remaining five normal tests are the Anderson--Darling test,
+    the Cramer--von Mises test, the Lilliefors (Kolmogorov--Smirnov)
+    test, the Pearson chi--square test, and the Shapiro--Francia test.
+    They are calling functions from R's contributed package <code>nortest</code>.
+    The difference to the original test functions implemented in R and
+    from contributed R packages is that the Rmetrics functions accept
+    time series objects as input and give a more detailed output report.</p>
+<p>The Anderson-Darling test is used to test if a sample of data came
+    from a population with a specific distribution, here the normal
+    distribution. The <code>adTest</code> goodness-of-fit test can be
+    considered as a modification of the Kolmogorov--Smirnov test which
+    gives more weight to the tails than does the <code>ksnormTest</code>.</p>
+<p>Note that <code>jarqueBeraTest</code> computes the asymptotic statistic
+  and p-value, while <code>jbTesT</code> gives final sample approximations.</p>
+    </div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
     
@@ -195,7 +235,7 @@ normalTesttest suite for some normality tests.
 <p></p></dd>
 
     <dt>jarqueberaTest</dt>
-<dd></dd>
+<dd><p>no additional elements.</p></dd>
 
     <dt>jbTest</dt>
 <dd>
@@ -245,39 +285,6 @@ normalTesttest suite for some normality tests.
 
   
 </dl></div>
-    <div class="section level2">
-    <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
-    
-
-<p>The hypothesis tests may be of interest for many financial
-    and economic applications, especially for the investigation
-    of univariate time series returns.
-    <br></p>
-<p><b>Normal Tests:</b>
-    <br><br>
-    Several tests for testing if the records from a data set are normally
-    distributed are available. The input to all these functions may be
-    just a vector <code>x</code> or a univariate time series object <code>x</code>
-    of class <code>timeSeries</code>.</p>
-<p>First there exists a wrapper function which allows to call one from
-    two normal tests either the Shapiro--Wilks test or the Jarque--Bera
-    test. This wrapper was introduced for compatibility with S-Plus'
-    FinMetrics package.</p>
-<p>Also available are the Kolmogorov--Smirnov one sample test and the
-    D'Agostino normality test.</p>
-<p>The remaining five normal tests are the Anderson--Darling test,
-    the Cramer--von Mises test, the Lilliefors (Kolmogorov--Smirnov)
-    test, the Pearson chi--square test, and the Shapiro--Francia test.
-    They are calling functions from R's contributed package <code>nortest</code>.
-    The difference to the original test functions implemented in R and
-    from contributed R packages is that the Rmetrics functions accept
-    time series objects as input and give a more detailed output report.</p>
-<p>The Anderson-Darling test is used to test if a sample of data came
-    from a population with a specific distribution, here the normal
-    distribution. The <code>adTest</code> goodness-of-fit test can be
-    considered as a modification of the Kolmogorov--Smirnov test which
-    gives more weight to the tails than does the <code>ksnormTest</code>.</p>
-    </div>
     <div class="section level2">
     <h2 id="note">Note<a class="anchor" aria-label="anchor" href="#note"></a></h2>
     

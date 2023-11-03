@@ -14,7 +14,7 @@ Estimates the parameters of a hyperbolic distribution."><!-- mathjax --><script 
     
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4031.95</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4032.96</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,113 +58,136 @@ Estimates the parameters of a hyperbolic distribution."><!-- mathjax --><script 
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
-    <dl><dt>alpha, beta, delta, mu</dt>
-<dd><p><code>alpha</code> is a shape parameter by default 1,
-        <code>beta</code> is a skewness parameter by default 0, 
-            note <code>abs(beta)</code> is in the range (0, alpha),
-        <code>delta</code> is a scale parameter by default 1, 
-            note, <code>delta</code> must be zero or positive, and
-        <code>mu</code> is a location parameter, by default 0.
-        These is the meaning of the parameters in the first 
-        parameterization <code>pm=1</code> which is the default 
-        parameterization selection.
-        In the second parameterization, <code>pm=2</code> <code>alpha</code>
-        and <code>beta</code> take the meaning of the shape parameters
-        (usually named) <code>zeta</code> and <code>rho</code>.
-        In the third parameterization, <code>pm=3</code> <code>alpha</code>
-        and <code>beta</code> take the meaning of the shape parameters
-        (usually named) <code>xi</code> and <code>chi</code>.
-        In the fourth parameterization, <code>pm=4</code> <code>alpha</code>
-        and <code>beta</code> take the meaning of the shape parameters
-        (usually named) <code>a.bar</code> and <code>b.bar</code>.</p></dd>
-
-    <dt>description</dt>
-<dd><p>a character string which allows for a brief description.</p></dd>
-
-    <dt>doplot</dt>
-<dd><p>a logical flag. Should a plot be displayed?</p></dd>
-
-    <dt>scale</dt>
-<dd><p>a logical flag, by default <code>TRUE</code>. Should the time series
-        be scaled by its standard deviation to achieve a more stable
-        optimization?</p></dd>
-
-    <dt>span</dt>
-<dd><p>x-coordinates for the plot, by default 100 values 
-        automatically selected and ranging between the 0.001, 
-        and 0.999 quantiles. Alternatively, you can specify
-        the range by an expression like <code>span=seq(min, max,
-        times = n)</code>, where, <code>min</code> and <code>max</code> are the 
-        left and right endpoints of the range, and <code>n</code> gives 
-        the number of the intermediate points.</p></dd>
-
-    <dt>title</dt>
-<dd><p>a character string which allows for a project title.</p></dd>
-
-    <dt>trace</dt>
-<dd><p>a logical flag. Should the parameter estimation process be
-        traced?</p></dd>
-
-    <dt>x</dt>
+    <dl><dt>x</dt>
 <dd><p>a numeric vector.</p></dd>
 
-    <dt>...</dt>
+  <dt>alpha</dt>
+<dd>
+    
+<p>shape parameter, a positive number.</p>
+<p></p></dd>
+
+  <dt>beta</dt>
+<dd>
+
+<p>skewness parameter, <code>abs(beta)</code> is in the 
+    range <code>(0, alpha)</code>.</p>
+<p></p></dd>
+
+  <dt>delta</dt>
+<dd>
+
+<p>scale parameter, must be zero or positive.</p>
+<p></p></dd>
+
+  <dt>mu</dt>
+<dd>
+
+<p>location parameter, by default 0.</p>    
+<p></p></dd>
+
+  <dt>scale</dt>
+<dd>
+
+<p>a logical flag, by default <code>TRUE</code>. Should the time series be
+    scaled by its standard deviation to achieve a more stable
+    optimization?</p>
+<p></p></dd>
+
+  <dt>doplot</dt>
+<dd>
+
+<p>a logical flag. Should a plot be displayed?</p>
+<p></p></dd>
+
+  <dt>span</dt>
+<dd>
+    
+<p>x-coordinates for the plot, by default 100 values automatically
+    selected and ranging between the 0.001, and 0.999
+    quantiles. Alternatively, you can specify the range by an expression
+    like <code>span=seq(min, max, times = n)</code>, where, <code>min</code> and
+    <code>max</code> are the left and right endpoints of the range, and
+    <code>n</code> gives the number of the intermediate points.</p>
+<p></p></dd>
+
+  <dt>trace</dt>
+<dd>
+
+<p>a logical flag. Should the parameter estimation process be
+    traced?</p>
+<p></p></dd>
+
+  <dt>title</dt>
+<dd>
+
+<p>a character string which allows for a project title.</p>
+<p></p></dd>
+
+  
+  <dt>description</dt>
+<dd>
+
+<p>a character string which allows for a brief description.</p>
+<p></p></dd>
+
+  <dt>...</dt>
 <dd><p>parameters to be parsed.</p></dd>
 
-
-</dl></div>
-    <div class="section level2">
-    <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    
-
-<p>an object from class <code>"fDISTFIT"</code>.</p>
-
-
-<p>Slot <code>fit</code> is a list with the following components:</p>
-  
-  
-
-<p>The functions <code>tFit</code>, <code>hypFit</code> and <code>nigFit</code> return 
-    a list with the following components:</p>
-<dl><dt>estimate</dt>
-<dd><p>the point at which the maximum value of the log liklihood 
-        function is obtained.</p></dd>
-
-    <dt>minimum</dt>
-<dd><p>the value of the estimated maximum, i.e. the value of the
-        log liklihood function.</p></dd>
-
-    <dt>code</dt>
-<dd><p>an integer indicating why the optimization process terminated.<br>
-        1: relative gradient is close to zero, current iterate is probably 
-            solution; <br>
-        2: successive iterates within tolerance, current iterate is probably 
-            solution; <br>
-        3: last global step failed to locate a point lower than <code>estimate</code>. 
-            Either <code>estimate</code> is an approximate local minimum of the 
-            function or <code>steptol</code> is too small; <br>
-        4: iteration limit exceeded; <br>
-        5: maximum step size <code>stepmax</code> exceeded five consecutive times. 
-            Either the function is unbounded below, becomes asymptotic to a 
-            finite value from above in some direction or <code>stepmax</code> 
-            is too small.</p></dd>
-
-    <dt>gradient</dt>
-<dd><p>the gradient at the estimated maximum.</p></dd>
-
-    <dt>steps</dt>
-<dd><p>number of function calls.</p></dd>
-
-              
 </dl></div>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
     
 
+<p>The meaning of the parameters given above corresponds to the first
+  parameterization, see <code><a href="dist-hyp.html">dhyp</a></code> for details.</p>  
 <p>The function <code><a href="https://rdrr.io/r/stats/nlm.html" class="external-link">nlm</a></code> is used to minimize the "negative" 
-    maximum log-likelihood function. <code>nlm</code> carries out a minimization 
-    using a Newton-type algorithm.</p>
+  maximum log-likelihood function. <code>nlm</code> carries out a minimization 
+  using a Newton-type algorithm.</p>
     </div>
+    <div class="section level2">
+    <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
+    
+
+
+<p>an object from class <code>"fDISTFIT"</code>.
+  Slot <code>fit</code> is a list with the following components:</p>
+<dl><dt>estimate</dt>
+<dd>
+
+<p>the point at which the maximum value of the log liklihood function
+    is obtained.</p>
+<p></p></dd>
+
+  <dt>minimum</dt>
+<dd>
+
+<p>the value of the estimated maximum, i.e. the value of the log
+    liklihood function.</p>
+<p></p></dd>
+
+  <dt>code</dt>
+<dd><p>an integer indicating why the optimization process terminated.<br>
+    1: relative gradient is close to zero, current iterate is probably 
+        solution; <br>
+    2: successive iterates within tolerance, current iterate is probably 
+        solution; <br>
+    3: last global step failed to locate a point lower than <code>estimate</code>. 
+        Either <code>estimate</code> is an approximate local minimum of the 
+        function or <code>steptol</code> is too small; <br>
+    4: iteration limit exceeded; <br>
+    5: maximum step size <code>stepmax</code> exceeded five consecutive times. 
+        Either the function is unbounded below, becomes asymptotic to a 
+        finite value from above in some direction or <code>stepmax</code> 
+        is too small.</p></dd>
+
+  <dt>gradient</dt>
+<dd><p>the gradient at the estimated maximum.</p></dd>
+
+  <dt>steps</dt>
+<dd><p>number of function calls.</p></dd>
+
+</dl></div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>

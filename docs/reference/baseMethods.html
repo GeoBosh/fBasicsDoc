@@ -16,7 +16,7 @@ Basic extensions which add and/or modify additional functionality
     
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4031.95</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4032.96</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,19 +58,13 @@ Basic extensions which add and/or modify additional functionality
 <span><span class="fu">stdev</span><span class="op">(</span><span class="va">x</span>, na.rm <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># S3 method for default</span></span>
-<span><span class="fu">termPlot</span><span class="op">(</span><span class="va">model</span>, <span class="va">...</span><span class="op">)</span></span>
-<span>   </span>
-<span><span class="co"># S3 method for default</span></span>
-<span><span class="fu">volatility</span><span class="op">(</span><span class="va">object</span>, <span class="va">...</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">termPlot</span><span class="op">(</span><span class="va">model</span>, <span class="va">...</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>model</dt>
 <dd><p>a fitted model object.</p></dd>
-
-  <dt>object</dt>
-<dd><p>an object from which to extract the volatility.</p></dd>
 
   <dt>x</dt>
 <dd><p>an object for which to compute the standard deviation.</p></dd>
@@ -90,14 +84,11 @@ Basic extensions which add and/or modify additional functionality
 
 <p><code>stdev</code> and <code>termPlot</code> are generic functions with default
   methods <code><a href="https://rdrr.io/r/stats/sd.html" class="external-link">stats::sd</a></code> and <code><a href="https://rdrr.io/r/stats/termplot.html" class="external-link">stats::termplot</a></code>, respectively.</p>
-<p><code>volatility</code> is a generic function, whose default method centers
-  and squares the values in <code>object</code>. Other packages can (and do)
-  define methods for it.</p>
     </div>
     <div class="section level2">
     <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
-    <div class="dont-index"><p><code>sd</code>,
-  <code>termplot</code></p></div>
+    <div class="dont-index"><p><code><a href="https://rdrr.io/r/stats/sd.html" class="external-link">sd</a></code>,
+  <code><a href="https://rdrr.io/r/stats/termplot.html" class="external-link">termplot</a></code></p></div>
     </div>
 
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

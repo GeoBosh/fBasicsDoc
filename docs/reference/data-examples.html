@@ -36,7 +36,7 @@ usdthbTick data of USD to THB.
     
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4031.95</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4032.96</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,46 +71,60 @@ usdthbTick data of USD to THB.
 
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
-    <p><b>Capitalization:</b><br><code>Capitalization</code>
- contains market capitalization of domestic companies from
- 2003 - 2008 in USD millions.</p> 
+    
+
+<p>All datasets are data frames. A brief description is given below.</p>  
+<p><b>Capitalization:</b><br><code>Capitalization</code>
+  contains market capitalization of 13 domestic companies for 6 years
+  (from 2003 to 2008) in USD millions. Each row contains the data for
+  one company/stock exchange.</p> 
 <p><b>cars2:</b><br><code>cars2</code>
- contains the price, country, reliability, mileage, type, weight,
- engine displacement and net horsepower of various car
- models.</p> 
+  contains columns <code>rowNames</code> (model), <code>Price</code>,
+  <code>Country</code>, <code>Reliability</code>, <code>Mileage</code>, (<code>Type</code>),
+  (<code>Weight</code>), <code>Disp.</code> (engine displacement) and <code>HP</code>
+  (<code>net horsepower</code>) reprsenting the indicated properties of 60 car
+  models.</p> 
 <p><b>DowJones30:</b><br><code>DowJones30</code>
- contains daily observations from the Dow Jones 30 Index series.
- Each of the thirty columns represents the closing price 
- of a stock in the Index.</p> 
+  contains 2529 daily observations from the ‘Dow Jones 30’ Index
+  series.  The first row contains the dates (from 1990-12-31 to
+  2001-01-02). Each of the remaining thirty columns represents the
+  closing price of a stock in the Index.</p> 
 <p><b>HedgeFund:</b><br><code>HedgeFund</code>
- contains monthly percentual returns of various hedge fund
- strategies from Hennessee Group LLC.</p> 
+  contains monthly percentage returns of 16 hedge fund strategies from
+  Hennessee Group LLC for year 2005.</p> 
 <p><b>msft.dat:</b><br><code>msft.dat</code>
- contains daily prices (open, high, low and close) and
- volumes for the Microsoft stocks.
- It is a data frame with column names <code>"%Y-%m-%d"</code>,
- <code>"Open"</code>, <code>"High"</code>, <code>"Low"</code>, <code>"Close"</code>,
- <code>"Volume"</code>.</p>
-<p>Note: there is a dataset, <code>MSFT</code>, in package <span class="pkg">timeSeries</span>
- which contains the same data but is of class <code>"timeSeries"</code>.</p> 
+  contains daily prices (open, high, low and close) and volumes for the
+  Microsoft stocks.  It is a data frame with column names
+  <code>"%Y-%m-%d"</code>, <code>"Open"</code>, <code>"High"</code>, <code>"Low"</code>,
+  <code>"Close"</code>, <code>"Volume"</code>.</p>
+<p><em>Note:</em> there is a dataset, <code>MSFT</code>, in package
+  <span class="pkg">timeSeries</span> which contains the same data but is of class
+  <code>"timeSeries"</code>.</p> 
 <p><b>nyse:</b><br><code>nyse</code>
- contains daily records of the NYSE Composite Index.</p> 
+  contains daily records of the NYSE Composite Index from 1966-01-04 to
+  2002-12-31 (9311 observations). The data is in column <code>"NYSE"</code>
+  (second column). The first column contains the dates.</p> 
 <p><b>PensionFund:</b><br><code>PensionFund</code>
- is a daily data set of the Swiss pension fund benchmark LPP-2005.
- The data set ranges from 2005-11-01 to 2007-04-11.
- The columns are named: SBI, SPI, SII, LMI, MPI, ALT, LPP25, LPP40, LPP60</p> 
+  is a daily data set of the Swiss pension fund benchmark LPP-2005.
+  The data set ranges from 2005-11-01 to 2007-04-11.
+  The columns are named: SBI, SPI, SII, LMI, MPI, ALT, LPP25, LPP40, LPP60.</p> 
 <p><b>swissEconomy:</b><br><code>swissEconomy</code>
- contains the GDP per capita, exports, imports, interest rates, inflation,
- unemployment and population for the years 1964 - 1999 for Switzerland.</p> 
+  contains the GDP per capita (<code>GDPR</code>), exports (<code>EXPO</code>),
+  imports (<code>IMPO</code>), interest rates (<code>INTR</code>), inflation
+  (<code>INFL</code>), unemployment (<code>UNEM</code>) and population (<code>POPU</code>)
+  foryears 1964 to 1999 for Switzerland.</p> 
 <p><b>SWXLP:</b><br><code>SWXLP</code>
- is a daily data set of the Swiss pension fund benchmark LPP-2000.
- The data set ranges from 2000-01-03 to 2007-05-08.
- The columns are named: SBI, SPI, SII, LP25, LP40, LP60.</p> 
+  is a daily data set of the Swiss pension fund benchmark LPP-2000.  The
+  data set ranges from 2000-01-03 to 2007-05-08 (1917 observations). The
+  first column contains the dates. The remaining columns are named: SBI,
+  SPI, SII, LP25, LP40, LP60.</p> 
 <p><b>usdthb:</b><br><code>usdthb</code>
- Tick data of US Dollar (USD) in Thailand Bhat (THB) colleted from
- Reuters. Format: YYYYMMDDhhmm. Column variables: delay time,
- contributer, bid and ask prices, and quality flag. It covers the 
- Asia FX crisis in June 1997.</p>
+  Tick data of US Dollar (USD) in Thailand Bhat (THB) collected from
+  Reuters. The date is in the first column in YYYYMMDDhhmm format. The
+  remaining columns contain: delay time (<code>DELAY</code>), contributor
+  (<code>CONTRIBUTOR</code>), bid (<code>BID</code>) and ask (<code>ASK</code>) prices,
+  and quality flag (<code>FLAG</code>). It covers the Asia FX crisis in June
+  1997.</p>
     </div>
     <div class="section level2">
     <h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a></h2>
@@ -128,22 +142,22 @@ usdthbTick data of USD to THB.
  <!-- % http://ftp.yzu.edu.tw/CRAN/doc/contrib/Lam-IntroductionToR_LHL.pdf -->
  <!-- % http://www.uni-muenster.de/ZIV.BennoSueselbeck/s-html/helpfiles/car.all.html --></p> 
 <p><b>DowJones30</b><br>
- http://www.yahoo.com.</p> 
+ https://www.yahoo.com.</p> 
 <p><b>HedgeFund:</b><br>
  http://www.hennesseegroup.com/indices/returns/year/2005.html.</p> 
 <p><b>msft.dat:</b><br>
- http://www.yahoo.com.</p> 
+ https://www.yahoo.com.</p> 
 <p><b>nyse:</b><br>
- http://www.nyse.com.</p> 
+ https://www.nyse.com.</p> 
 <p><b>PensionFund:</b><br>
  SBI, SPI, SII: SIX (Swiss Exchange Zurich);
  LPP25, LPP40, LPP60: Banque Pictet Geneva;
- LMI, MPI, ALT: Recalculated from the indices and benchmarks</p> 
+ LMI, MPI, ALT: Recalculated from the indices and benchmarks.</p> 
 <p><b>swissEconomy:</b><br>
- http://www.oecd.org/ and http://www.imf.org/.</p> 
+ https://www.oecd.org/ and https://www.imf.org/.</p> 
 <p><b>SWXLP:</b><br>
  SBI, SPI, SII: SIX (Swiss Exchange Zurich);
- LPP25, LPP40, LPP60: Banque Pictet Geneva</p> 
+ LPP25, LPP40, LPP60: Banque Pictet Geneva.</p> 
 <p><b>usdthb:</b><br>
  Reuters Select Feed Terminal (1997).</p>
 <p><!-- % \bold{Example:}\cr -->

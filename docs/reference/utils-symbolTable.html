@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4031.95</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4032.96</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,18 +72,26 @@
     </div>
     <div class="section level2">
     <h2 id="note">Note<a class="anchor" aria-label="anchor" href="#note"></a></h2>
-    <p>Symbols with codes on the range 128-255 are not legitimate in some
-  locales, most notably UTF-8.</p>
+    
+  
+<p>Symbols with codes on the range 128-255 are not legitimate in some
+  locales, most notably UTF-8. Moreover, what happens with non-ASCII
+  characters in plots is system dependent and depends on the graphics
+  device, as well. Use of such characters is not recommended for
+  portable code.</p>
 <p>From version 4031.95 of package <code>fBasics</code>, the characters are
   always defined as Latin1. In particular, in UTF8 locales the system
-  converts them internally to UTF8. Still some symbols are not
-  usable. For details, see the help page of <code><a href="https://rdrr.io/r/graphics/points.html" class="external-link">points()</a></code>, in
-  particular the discussion of its argument <code>pch</code>.</p>
+  converts them internally to UTF8. Still some symbols are not usable
+  and non-ASCII symbols are not recommended, as pointed out above. For
+  details, see the help page of <code><a href="https://rdrr.io/r/graphics/points.html" class="external-link">points()</a></code>, in particular the
+  discussion of its argument <code>pch</code>.</p>
     </div>
     <div class="section level2">
     <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
     <div class="dont-index"><p><code><a href="utils-characterTable.html">characterTable</a></code>,
-  <code><a href="utils-colorTable.html">colorTable</a></code></p></div>
+  <code><a href="utils-colorTable.html">colorTable</a></code></p>
+<p><code><a href="https://rdrr.io/r/grDevices/pdf.html" class="external-link">pdf</a></code> for discussion of encodings for the pdf
+  device</p></div>
     </div>
 
     <div class="section level2">
