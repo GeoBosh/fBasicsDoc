@@ -13,7 +13,7 @@ Produces an index/price, a cumulated return, a return, or a drawdown
 
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4041.96.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4041.97</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,54 +59,78 @@ Produces an index/price, a cumulated return, a return, or a drawdown
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
+    <p></p>
+<dl><dt id="arg-x">x<a class="anchor" aria-label="anchor" href="#arg-x"></a></dt>
+<dd>
 
+<p>an object of class <code>"timeSeries"</code> or any other object which can
+    be transformed by the function <code>as.timeSeries</code> into an object
+    of class <code>timeSeries</code>. The latter case, other then
+    <code>timeSeries</code> objects, is more or less untested.</p>
+<p></p></dd>
 
-<p></p>
-<dl><dt id="arg-box">box<a class="anchor" aria-label="anchor" href="#arg-box"></a></dt>
-<dd><p>a logical flag, should a box be added to the plot?
-        By default <code>TRUE</code>.</p></dd>
+  <dt id="arg-index">index<a class="anchor" aria-label="anchor" href="#arg-index"></a></dt>
+<dd>
 
-    <dt id="arg-col">col<a class="anchor" aria-label="anchor" href="#arg-col"></a></dt>
-<dd><p>the color for the series. In the univariate case use just a
-        color name like the default, <code>col="steelblue"</code>, in the
-        multivariate case we recommend to select the colors from a
-        color palette, e.g. <code>col=heat.colors(ncol(x))</code>.</p></dd>
+<p>a numeric value, by default 100. The function cumulates column by
+    columN the returns and multiplies the result with the index value:
+    <code>index * exp(colCumsums(x))</code>.</p>
+<p></p></dd>
 
-    <dt id="arg-grid">grid<a class="anchor" aria-label="anchor" href="#arg-grid"></a></dt>
-<dd><p>a logical flag, should a grid be added to the plot?
-        By default <code>TRUE</code>.</p></dd>
+  <dt id="arg-labels">labels<a class="anchor" aria-label="anchor" href="#arg-labels"></a></dt>
+<dd>
 
-    <dt id="arg-index">index<a class="anchor" aria-label="anchor" href="#arg-index"></a></dt>
-<dd><p>a numeric value, by default 100. The function cumulates
-        column by colum the returns and multiplies the result with
-        the index value: <code>index*exp(colCumsums(x))</code>.</p></dd>
+<p>a logical flag, should the plot be returned with default labels and
+    decorated in an automated way? By default <code>TRUE</code>.</p>
+<p></p></dd>
 
-    <dt id="arg-labels">labels<a class="anchor" aria-label="anchor" href="#arg-labels"></a></dt>
-<dd><p>a logical flag, should the plot be returned with default labels
-        and decorated in an automated way? By default <code>TRUE</code>.</p></dd>
+  <dt id="arg-type">type<a class="anchor" aria-label="anchor" href="#arg-type"></a></dt>
+<dd>
 
-    <dt id="arg-rug">rug<a class="anchor" aria-label="anchor" href="#arg-rug"></a></dt>
-<dd><p>a logical flag, by default TRUE. Should a rug representation
-        of the data added to the plot?</p></dd>
+<p>what type of plot should be drawn? By default we use a line plot,
+    <code>type="l"</code>. An alternative plot style which produces nice
+    figures is for example <code>type="h"</code>.</p>
+<p></p></dd>
 
-    <dt id="arg-title">title<a class="anchor" aria-label="anchor" href="#arg-title"></a></dt>
-<dd><p>a logical flag, by default TRUE. Should a default title added
-        to the plot?</p></dd>
+  <dt id="arg-col">col<a class="anchor" aria-label="anchor" href="#arg-col"></a></dt>
+<dd>
 
-    <dt id="arg-type">type<a class="anchor" aria-label="anchor" href="#arg-type"></a></dt>
-<dd><p>what type of plot should be drawn? By default we use a line plot,
-        <code>type="l"</code>. An alternative plot style which produces nice
-        figures is for example <code>type="h"</code>.</p></dd>
+<p>the color for the series. In the univariate case use just a color
+    name like the default, <code>col="steelblue"</code>, in the multivariate
+    case we recommend to select the colors from a color palette,
+    e.g. <code>col=heat.colors(ncol(x))</code>.</p>
+<p></p></dd>
 
-     <dt id="arg-x">x<a class="anchor" aria-label="anchor" href="#arg-x"></a></dt>
-<dd><p>an object of class <code>"timeSeries"</code> or any other object which
-        can be transformed by the function <code>as.timeSeries</code> into an
-        object of class <code>timeSeries</code>. The latter case, other then
-        <code>timeSeries</code> objects, is more or less untested.</p></dd>
+  <dt id="arg-title">title<a class="anchor" aria-label="anchor" href="#arg-title"></a></dt>
+<dd>
 
-    <dt id="arg--">...<a class="anchor" aria-label="anchor" href="#arg--"></a></dt>
+<p>a logical flag, by default TRUE. Should a default title added
+    to the plot?</p>
+<p></p></dd>
+
+  <dt id="arg-grid">grid<a class="anchor" aria-label="anchor" href="#arg-grid"></a></dt>
+<dd>
+
+<p>a logical flag, should a grid be added to the plot?  By default
+    <code>TRUE</code>.</p>
+<p></p></dd>
+
+  <dt id="arg-box">box<a class="anchor" aria-label="anchor" href="#arg-box"></a></dt>
+<dd>
+
+<p>a logical flag, should a box be added to the plot?  By default
+    <code>TRUE</code>.</p>
+<p></p></dd>
+
+  <dt id="arg-rug">rug<a class="anchor" aria-label="anchor" href="#arg-rug"></a></dt>
+<dd>
+
+<p>a logical flag, by default TRUE. Should a rug representation of the
+    data added to the plot?</p>
+<p></p></dd>
+
+  <dt id="arg--">...<a class="anchor" aria-label="anchor" href="#arg--"></a></dt>
 <dd><p>optional arguments to be passed.</p></dd>
-
 
 </dl></div>
     <div class="section level2">
@@ -140,10 +164,10 @@ Produces an index/price, a cumulated return, a return, or a drawdown
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">## seriesPlot -</span></span></span>
-<span class="r-in"><span>   <span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">LPP2005REC</span>, package <span class="op">=</span> <span class="st">"timeSeries"</span><span class="op">)</span></span></span>
-<span class="r-in"><span>   <span class="va">tS</span> <span class="op">&lt;-</span> <span class="fu"><a href="fBasics-reexports.html">as.timeSeries</a></span><span class="op">(</span><span class="va">LPP2005REC</span><span class="op">)</span></span></span>
-<span class="r-in"><span>   <span class="fu">seriesPlot</span><span class="op">(</span><span class="va">tS</span><span class="op">)</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">LPP2005REC</span>, package <span class="op">=</span> <span class="st">"timeSeries"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">tS</span> <span class="op">&lt;-</span> <span class="fu"><a href="fBasics-reexports.html">as.timeSeries</a></span><span class="op">(</span><span class="va">LPP2005REC</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu">seriesPlot</span><span class="op">(</span><span class="va">tS</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="plot-seriesPlot-1.png" alt="" width="700" height="433"></span>
 <span class="r-plt img"><img src="plot-seriesPlot-2.png" alt="" width="700" height="433"></span>
 <span class="r-plt img"><img src="plot-seriesPlot-3.png" alt="" width="700" height="433"></span>

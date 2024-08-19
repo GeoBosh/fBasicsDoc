@@ -11,7 +11,7 @@ Tests if two series are correlated."></head><body>
 
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4041.96.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4041.97</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,9 +96,7 @@ Tests if two series are correlated."></head><body>
     </div>
     <div class="section level2">
     <h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a></h2>
-
-
-<p>Conover, W. J. (1971);
+    <p>Conover, W. J. (1971);
     <em>Practical nonparametric statistics</em>,
     New York: John Wiley &amp; Sons.</p>
 <p>Lehmann E.L. (1986);
@@ -107,21 +105,17 @@ Tests if two series are correlated."></head><body>
     </div>
     <div class="section level2">
     <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
-    <div class="dont-index">
-
-<p><code><a href="test-locationTest.html">locationTest</a></code>,
+    <div class="dont-index"><p><code><a href="test-locationTest.html">locationTest</a></code>,
     <code><a href="test-scaleTest.html">scaleTest</a></code>,
-    <code><a href="test-varianceTest.html">varianceTest</a></code>.</p></div>
+    <code><a href="test-varianceTest.html">varianceTest</a></code></p></div>
     </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">## x, y -</span></span></span>
-<span class="r-in"><span>   <span class="va">x</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">50</span><span class="op">)</span></span></span>
-<span class="r-in"><span>   <span class="va">y</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">50</span><span class="op">)</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">50</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">y</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">50</span><span class="op">)</span></span></span>
 <span class="r-in"><span>  </span></span>
-<span class="r-in"><span><span class="co">## correlationTest - </span></span></span>
-<span class="r-in"><span>   <span class="fu">correlationTest</span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span>, <span class="st">"pearson"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">correlationTest</span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span>, <span class="st">"pearson"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Title:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  Pearson's Correlation Test</span>
@@ -142,7 +136,7 @@ Tests if two series are correlated."></head><body>
 <span class="r-out co"><span class="r-pr">#&gt;</span>          Less: -1, 0.4728</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>       Greater: 0.0337, 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span>   <span class="fu">correlationTest</span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span>, <span class="st">"kendall"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">correlationTest</span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span>, <span class="st">"kendall"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Title:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  Kendall's tau Correlation Test</span>
@@ -161,7 +155,8 @@ Tests if two series are correlated."></head><body>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     Alternative           Greater: 0.05506 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     Alternative   Greater | Exact: 0.05615 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span>   <span class="fu">spearmanTest</span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu">spearmanTest</span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Title:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  Spearman's rho Correlation Test</span>

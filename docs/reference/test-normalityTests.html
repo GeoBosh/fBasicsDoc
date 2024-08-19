@@ -79,7 +79,7 @@ normalTesttest suite for some normality tests.
 
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4041.96.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4041.97</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -208,7 +208,7 @@ normalTesttest suite for some normality tests.
     </div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p>an object from class <code><a href="fHTEST-class.html">fHTEST</a></code></p>
+    <p>an object from class <code><a href="fHTEST-class.html">fHTEST</a></code>.</p>
 <p>Slot <code>test</code> is a list containing the following (optionally empty)
   elements (in addition to those described in <code><a href="fHTEST-class.html">fHTEST</a></code>):</p>
 <p></p><dl><dt>ksnormTest</dt>
@@ -348,12 +348,10 @@ normalTesttest suite for some normality tests.
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">## Series:</span></span></span>
-<span class="r-in"><span>   <span class="va">x</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">100</span><span class="op">)</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">100</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co">## ksnormTests -</span></span></span>
-<span class="r-in"><span>   <span class="co"># Kolmogorov - Smirnov One-Sampel Test</span></span></span>
-<span class="r-in"><span>   <span class="fu">ksnormTest</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="co">## Kolmogorov-Smirnov one-sampe test</span></span></span>
+<span class="r-in"><span><span class="fu">ksnormTest</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Title:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  Asymptotic one-sample Kolmogorov-Smirnov test</span>
@@ -367,8 +365,8 @@ normalTesttest suite for some normality tests.
 <span class="r-out co"><span class="r-pr">#&gt;</span>     Alternative   Greater: 0.5456 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co">## shapiroTest - Shapiro-Wilk Test</span></span></span>
-<span class="r-in"><span>   <span class="fu">shapiroTest</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="co">## Shapiro-Wilk test</span></span></span>
+<span class="r-in"><span><span class="fu">shapiroTest</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Title:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  Shapiro - Wilk Normality Test</span>
@@ -380,10 +378,34 @@ normalTesttest suite for some normality tests.
 <span class="r-out co"><span class="r-pr">#&gt;</span>     0.7034 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co">## jarqueberaTest -</span></span></span>
-<span class="r-in"><span>   <span class="co"># Jarque - Bera Test</span></span></span>
-<span class="r-in"><span>   <span class="co"># jarqueberaTest(x)</span></span></span>
-<span class="r-in"><span>   <span class="co"># jbTest(x)</span></span></span>
+<span class="r-in"><span><span class="co">## Jarque-Bera Test</span></span></span>
+<span class="r-in"><span><span class="fu">jarqueberaTest</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Title:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Jarque - Bera Normalality Test</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Test Results:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   STATISTIC:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     X-squared: 0.7091</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   P VALUE:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     Asymptotic p Value: 0.7015 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-in"><span><span class="fu">jbTest</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Title:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Jarque - Bera Normality Test</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Test Results:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   PARAMETER:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     Sample Size: 100</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   STATISTIC:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     LM: 0.709</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     ALM: 0.607</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   P VALUE:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     LM p-value: 0.667 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     ALM p-value: 0.713 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     Asymptotic: 0.701 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>

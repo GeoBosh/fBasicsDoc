@@ -13,7 +13,7 @@ Computes the first four robust moments for the
 
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4041.96.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4041.97</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,30 +75,26 @@ Computes the first four robust moments for the
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">## Sample:</span></span></span>
-<span class="r-in"><span>   <span class="va">x</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/TDist.html" class="external-link">rt</a></span><span class="op">(</span><span class="fl">100</span>, <span class="fl">4</span><span class="op">)</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">## Sample</span></span></span>
+<span class="r-in"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/TDist.html" class="external-link">rt</a></span><span class="op">(</span><span class="fl">100</span>, <span class="fl">4</span><span class="op">)</span></span></span>
 <span class="r-in"><span>   </span></span>
-<span class="r-in"><span><span class="co">## sampleMED -</span></span></span>
-<span class="r-in"><span>   <span class="co"># Median:</span></span></span>
-<span class="r-in"><span>   <span class="fu">sampleMED</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="co">## Median</span></span></span>
+<span class="r-in"><span><span class="fu">sampleMED</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>         MED </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> -0.01580327 </span>
 <span class="r-in"><span> </span></span>
-<span class="r-in"><span><span class="co">## sampleIQR - </span></span></span>
-<span class="r-in"><span>   <span class="co"># Inter-quartile Range:</span></span></span>
-<span class="r-in"><span>   <span class="fu">sampleIQR</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="co">## Inter-quartile Range</span></span></span>
+<span class="r-in"><span><span class="fu">sampleIQR</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      IQR </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1.391907 </span>
 <span class="r-in"><span> </span></span>
-<span class="r-in"><span><span class="co">## sampleSKEW -  </span></span></span>
-<span class="r-in"><span>   <span class="co"># Robust Skewness:</span></span></span>
-<span class="r-in"><span>   <span class="fu">sampleSKEW</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="co">## Robust Skewness</span></span></span>
+<span class="r-in"><span><span class="fu">sampleSKEW</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>        SKEW </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 0.009924021 </span>
 <span class="r-in"><span>   </span></span>
-<span class="r-in"><span><span class="co">## sampleKURT -</span></span></span>
-<span class="r-in"><span>   <span class="co"># Robust Kurtosis:</span></span></span>
-<span class="r-in"><span>   <span class="fu">sampleKURT</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="co">## Robust Kurtosis</span></span></span>
+<span class="r-in"><span><span class="fu">sampleKURT</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     KURT </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1.314856 </span>
 </code></pre></div>

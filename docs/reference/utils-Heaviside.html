@@ -15,7 +15,7 @@ Functions which compute the Heaviside and related functions. These
 
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4041.96.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4041.97</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,31 +103,22 @@ Functions which compute the Heaviside and related functions. These
     </div>
     <div class="section level2">
     <h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a></h2>
-
-
-<p>Weisstein W. (2004);
+    <p>Weisstein W. (2004);
     <em>http://mathworld.wolfram.com/HeavisideStepFunction.html</em>,
     Mathworld.</p>
     </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">## Heaviside -</span></span></span>
-<span class="r-in"><span>   <span class="va">x</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sort.html" class="external-link">sort</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1</span>, <span class="op">-</span><span class="fl">0.5</span>, <span class="fl">0</span>, <span class="fl">0.5</span>, <span class="fl">1</span>, <span class="fl">5</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">5</span><span class="op">)</span><span class="op">)</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-in"><span>   <span class="va">h</span> <span class="op">=</span> <span class="fu">Heaviside</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
-<span class="r-in"><span>    </span></span>
-<span class="r-in"><span><span class="co">## Sign -</span></span></span>
-<span class="r-in"><span>   <span class="va">s</span> <span class="op">=</span> <span class="fu">Sign</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
-<span class="r-in"><span>   </span></span>
-<span class="r-in"><span><span class="co">## Delta -</span></span></span>
-<span class="r-in"><span>   <span class="va">d</span> <span class="op">=</span> <span class="fu">Delta</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
-<span class="r-in"><span>   </span></span>
-<span class="r-in"><span><span class="co">## Boxcar -</span></span></span>
-<span class="r-in"><span>   <span class="va">Pi</span> <span class="op">=</span> <span class="fu">Boxcar</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sort.html" class="external-link">sort</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1</span>, <span class="op">-</span><span class="fl">0.5</span>, <span class="fl">0</span>, <span class="fl">0.5</span>, <span class="fl">1</span>, <span class="fl">5</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">5</span><span class="op">)</span><span class="op">)</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co">## Ramp - </span></span></span>
-<span class="r-in"><span>   <span class="va">r</span> <span class="op">=</span> <span class="fu">Ramp</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
-<span class="r-in"><span>   <span class="fu"><a href="https://rdrr.io/r/base/cbind.html" class="external-link">cbind</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">x</span>, Step <span class="op">=</span> <span class="va">h</span>, Signum <span class="op">=</span> <span class="va">s</span>, Delta <span class="op">=</span> <span class="va">d</span>, Pi <span class="op">=</span> <span class="va">Pi</span>, R <span class="op">=</span> <span class="va">r</span><span class="op">)</span>        </span></span>
+<span class="r-in"><span><span class="va">h</span> <span class="op">&lt;-</span> <span class="fu">Heaviside</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">s</span> <span class="op">&lt;-</span> <span class="fu">Sign</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">d</span> <span class="op">&lt;-</span> <span class="fu">Delta</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">Pi</span> <span class="op">&lt;-</span> <span class="fu">Boxcar</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">r</span> <span class="op">&lt;-</span> <span class="fu">Ramp</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/cbind.html" class="external-link">cbind</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">x</span>, Step <span class="op">=</span> <span class="va">h</span>, Signum <span class="op">=</span> <span class="va">s</span>, Delta <span class="op">=</span> <span class="va">d</span>, Pi <span class="op">=</span> <span class="va">Pi</span>, R <span class="op">=</span> <span class="va">r</span><span class="op">)</span>        </span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>           x Step Signum Delta   Pi    R</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [1,] -4.11  0.0     -1     0  0.0 0.00</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [2,] -1.00  0.0     -1     0  0.0 0.00</span>

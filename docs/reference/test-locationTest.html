@@ -11,7 +11,7 @@ Tests if two series differ in their distributional location parameter."></head><
 
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4041.96.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4041.97</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,7 +72,6 @@ Tests if two series differ in their distributional location parameter."></head><
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
 
 
-
 <p>The <code>method = "t"</code> can be used to determine if the two sample
   means are equal for unpaired data sets. Two variants are used,
   assuming equal or unequal variances.</p>
@@ -97,9 +96,7 @@ Tests if two series differ in their distributional location parameter."></head><
     </div>
     <div class="section level2">
     <h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a></h2>
-
-
-<p>Conover, W. J. (1971);
+    <p>Conover, W. J. (1971);
     <em>Practical nonparametric statistics</em>,
     New York: John Wiley &amp; Sons.</p>
 <p>Lehmann E.L. (1986);
@@ -108,21 +105,16 @@ Tests if two series differ in their distributional location parameter."></head><
     </div>
     <div class="section level2">
     <h2 id="author">Author<a class="anchor" aria-label="anchor" href="#author"></a></h2>
-
-
-<p>R-core team for hypothesis tests implemented from <span style="R">R</span>'s
+    <p>R-core team for hypothesis tests implemented from <span style="R">R</span>'s
   package <code>ctest</code>.</p>
     </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">## rnorm - </span></span></span>
-<span class="r-in"><span>   <span class="co"># Generate Series:</span></span></span>
-<span class="r-in"><span>   <span class="va">x</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">50</span><span class="op">)</span></span></span>
-<span class="r-in"><span>   <span class="va">y</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">50</span><span class="op">)</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">50</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">y</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">50</span><span class="op">)</span></span></span>
 <span class="r-in"><span>  </span></span>
-<span class="r-in"><span><span class="co">## locationTest -</span></span></span>
-<span class="r-in"><span>   <span class="fu">locationTest</span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span>, <span class="st">"t"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">locationTest</span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span>, <span class="st">"t"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Title:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  t Test</span>
@@ -155,7 +147,7 @@ Tests if two series differ in their distributional location parameter."></head><
 <span class="r-out co"><span class="r-pr">#&gt;</span>          Less | Equal Var: -Inf, 0.7118</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>       Greater | Equal Var: 0.1283, Inf</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span>   <span class="fu">locationTest</span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span>, <span class="st">"kw2"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">locationTest</span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span>, <span class="st">"kw2"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Title:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  Kruskal-Wallis Two Sample Test</span>
@@ -174,7 +166,6 @@ Tests if two series differ in their distributional location parameter."></head><
 <span class="r-out co"><span class="r-pr">#&gt;</span>   P VALUE:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     0.02989 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>

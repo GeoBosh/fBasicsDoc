@@ -11,7 +11,7 @@ Stacks either a lower triangle matrix or a matrix."></head><body>
 
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4041.96.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4041.97</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,10 +73,10 @@ Stacks either a lower triangle matrix or a matrix."></head><body>
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">## Create Pascal Matrix:</span></span></span>
-<span class="r-in"><span>   <span class="va">P</span> <span class="op">=</span> <span class="fu"><a href="matrix-pascal.html">pascal</a></span><span class="op">(</span><span class="fl">3</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">P</span> <span class="op">=</span> <span class="fu"><a href="matrix-pascal.html">pascal</a></span><span class="op">(</span><span class="fl">3</span><span class="op">)</span></span></span>
 <span class="r-in"><span>   </span></span>
-<span class="r-in"><span><span class="co">## Stack a matrix</span></span></span>
-<span class="r-in"><span>   <span class="fu">vec</span><span class="op">(</span><span class="va">P</span><span class="op">)</span> </span></span>
+<span class="r-in"><span><span class="co">## Stack the matrix</span></span></span>
+<span class="r-in"><span><span class="fu">vec</span><span class="op">(</span><span class="va">P</span><span class="op">)</span> </span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>       [,1]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [1,]    1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [2,]    1</span>
@@ -89,7 +89,7 @@ Stacks either a lower triangle matrix or a matrix."></head><body>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [9,]    6</span>
 <span class="r-in"><span>   </span></span>
 <span class="r-in"><span><span class="co">## Stack the lower triangle</span></span></span>
-<span class="r-in"><span>   <span class="fu">vech</span><span class="op">(</span><span class="va">P</span><span class="op">)</span>                                        </span></span>
+<span class="r-in"><span><span class="fu">vech</span><span class="op">(</span><span class="va">P</span><span class="op">)</span>                                        </span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      [,1] [,2] [,3] [,4] [,5] [,6]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1,]    1    1    1    2    3    6</span>
 </code></pre></div>

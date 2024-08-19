@@ -43,7 +43,7 @@ rt.lcgStudent-t linear congruential generator.
 
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4041.96.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4041.97</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -134,20 +134,17 @@ rt.lcgStudent-t linear congruential generator.
     </div>
     <div class="section level2">
     <h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a></h2>
-
-
-<p>Altman, N.S. (1988);
+    <p>Altman, N.S. (1988);
     <em>Bitwise Behavior of Random Number Generators</em>,
      SIAM J. Sci. Stat. Comput., 9(5), September, 941–949.</p>
     </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">## set.lcgseed -</span></span></span>
-<span class="r-in"><span>   <span class="fu">set.lcgseed</span><span class="op">(</span>seed <span class="op">=</span> <span class="fl">65890</span><span class="op">)</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">set.lcgseed</span><span class="op">(</span>seed <span class="op">=</span> <span class="fl">65890</span><span class="op">)</span></span></span>
 <span class="r-in"><span> </span></span>
-<span class="r-in"><span><span class="co">## runif.lcg - rnorm.lcg - rt.lcg -</span></span></span>
-<span class="r-in"><span>   <span class="fu"><a href="https://rdrr.io/r/base/cbind.html" class="external-link">cbind</a></span><span class="op">(</span><span class="fu">runif.lcg</span><span class="op">(</span><span class="fl">10</span><span class="op">)</span>, <span class="fu">rnorm.lcg</span><span class="op">(</span><span class="fl">10</span><span class="op">)</span>, <span class="fu">rt.lcg</span><span class="op">(</span><span class="fl">10</span>, df <span class="op">=</span> <span class="fl">4</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="co">## runif.lcg, rnorm.lcg, rt.lcg</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/cbind.html" class="external-link">cbind</a></span><span class="op">(</span><span class="fu">runif.lcg</span><span class="op">(</span><span class="fl">10</span><span class="op">)</span>, <span class="fu">rnorm.lcg</span><span class="op">(</span><span class="fl">10</span><span class="op">)</span>, <span class="fu">rt.lcg</span><span class="op">(</span><span class="fl">10</span>, df <span class="op">=</span> <span class="fl">4</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>            [,1]       [,2]        [,3]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [1,] 0.4125252  0.1343111  2.04846215</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [2,] 0.4008696  0.6894022 -0.51108298</span>
@@ -160,8 +157,7 @@ rt.lcgStudent-t linear congruential generator.
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [9,] 0.5179752 -1.0614631 -1.40535393</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [10,] 0.1761661 -0.5147036  0.99432970</span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co">## get.lcgseed -</span></span></span>
-<span class="r-in"><span>   <span class="fu">get.lcgseed</span><span class="op">(</span><span class="op">)</span>  </span></span>
+<span class="r-in"><span><span class="fu">get.lcgseed</span><span class="op">(</span><span class="op">)</span>  </span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed.lcg.seed </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                                                                                                                                                                                                                                                                             1743389204 </span>
 <span class="r-in"><span>   </span></span>
