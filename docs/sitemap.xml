@@ -6,8 +6,8 @@
 <url><loc>https://geobosh.github.io/fBasicsDoc/reference/00fBasics-package.html</loc></url>
 <url><loc>https://geobosh.github.io/fBasicsDoc/reference/baseMethods.html</loc></url>
 <url><loc>https://geobosh.github.io/fBasicsDoc/reference/data-examples.html</loc></url>
-<url><loc>https://geobosh.github.io/fBasicsDoc/reference/dist-distCheck.html</loc></url>
 <url><loc>https://geobosh.github.io/fBasicsDoc/reference/dist-DistributionFits.html</loc></url>
+<url><loc>https://geobosh.github.io/fBasicsDoc/reference/dist-distCheck.html</loc></url>
 <url><loc>https://geobosh.github.io/fBasicsDoc/reference/dist-gh.html</loc></url>
 <url><loc>https://geobosh.github.io/fBasicsDoc/reference/dist-ghFit.html</loc></url>
 <url><loc>https://geobosh.github.io/fBasicsDoc/reference/dist-ghMode.html</loc></url>
@@ -85,6 +85,7 @@
 <url><loc>https://geobosh.github.io/fBasicsDoc/reference/test-normalityTests.html</loc></url>
 <url><loc>https://geobosh.github.io/fBasicsDoc/reference/test-scaleTest.html</loc></url>
 <url><loc>https://geobosh.github.io/fBasicsDoc/reference/test-varianceTest.html</loc></url>
+<url><loc>https://geobosh.github.io/fBasicsDoc/reference/utils-Heaviside.html</loc></url>
 <url><loc>https://geobosh.github.io/fBasicsDoc/reference/utils-characterTable.html</loc></url>
 <url><loc>https://geobosh.github.io/fBasicsDoc/reference/utils-colIds.html</loc></url>
 <url><loc>https://geobosh.github.io/fBasicsDoc/reference/utils-colorLocator.html</loc></url>
@@ -92,7 +93,6 @@
 <url><loc>https://geobosh.github.io/fBasicsDoc/reference/utils-colorTable.html</loc></url>
 <url><loc>https://geobosh.github.io/fBasicsDoc/reference/utils-decor.html</loc></url>
 <url><loc>https://geobosh.github.io/fBasicsDoc/reference/utils-getS4.html</loc></url>
-<url><loc>https://geobosh.github.io/fBasicsDoc/reference/utils-Heaviside.html</loc></url>
 <url><loc>https://geobosh.github.io/fBasicsDoc/reference/utils-hessian.html</loc></url>
 <url><loc>https://geobosh.github.io/fBasicsDoc/reference/utils-interactivePlot.html</loc></url>
 <url><loc>https://geobosh.github.io/fBasicsDoc/reference/utils-listFunctions.html</loc></url>

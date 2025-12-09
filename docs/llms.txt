@@ -1,0 +1,494 @@
+# Installing fBasics
+
+The R package ‘fBasics’ provides a collection of functions to explore
+and to investigate basic properties of financial returns and related
+quantities. The covered fields include techniques of explorative data
+analysis and the investigation of distributional properties, including
+parameter estimation and hypothesis testing. Even more there are several
+utility functions for data handling and management.
+
+Package `fBasics` is part of the Rmetrics suite of R packages and is
+developed on R-forge at
+[fBasics](https://r-forge.r-project.org/scm/viewvc.php/pkg/fBasics/?root=rmetrics).
+The root of Rmetrics is at
+[R-forge](https://r-forge.r-project.org/projects/rmetrics).
+
+Install the [latest stable
+version](https://cran.r-project.org/package=fBasics) of `fBasics` from
+CRAN:
+
+``` R
+install.packages("fBasics")
+```
+
+You can install the [development
+version](https://r-forge.r-project.org/scm/viewvc.php/pkg/fBasics/?root=rmetrics)
+of `fBasics` from R-forge:
+
+``` R
+install.packages("fBasics", repos = "http://R-Forge.R-project.org")
+```
+
+To report bugs visit
+[Rmetrics](https://r-forge.r-project.org/projects/rmetrics/).
+
+# Documentation
+
+You can view the documentation of `fBasics` at
+[fBasicsDoc](https://geobosh.github.io/fBasicsDoc/) or download the
+[reference
+manual](https://cran.r-project.org/package=fBasics/fBasics.pdf) of the
+latest release from CRAN.
+
+# Package index
+
+## Overview of package fBasics
+
+- [`fBasics-package`](https://geobosh.github.io/fBasicsDoc/reference/00fBasics-package.md)
+  [`fBasics`](https://geobosh.github.io/fBasicsDoc/reference/00fBasics-package.md)
+  : Portfolio modelling, optimization and backtesting
+- [`fBasicsData`](https://geobosh.github.io/fBasicsDoc/reference/data-examples.md)
+  [`Capitalization`](https://geobosh.github.io/fBasicsDoc/reference/data-examples.md)
+  [`cars2`](https://geobosh.github.io/fBasicsDoc/reference/data-examples.md)
+  [`DowJones30`](https://geobosh.github.io/fBasicsDoc/reference/data-examples.md)
+  [`HedgeFund`](https://geobosh.github.io/fBasicsDoc/reference/data-examples.md)
+  [`msft.dat`](https://geobosh.github.io/fBasicsDoc/reference/data-examples.md)
+  [`nyse`](https://geobosh.github.io/fBasicsDoc/reference/data-examples.md)
+  [`PensionFund`](https://geobosh.github.io/fBasicsDoc/reference/data-examples.md)
+  [`swissEconomy`](https://geobosh.github.io/fBasicsDoc/reference/data-examples.md)
+  [`SWXLP`](https://geobosh.github.io/fBasicsDoc/reference/data-examples.md)
+  [`usdthb`](https://geobosh.github.io/fBasicsDoc/reference/data-examples.md)
+  : fBasics data sets
+
+## Tests
+
+- [`correlationTest()`](https://geobosh.github.io/fBasicsDoc/reference/test-correlationTest.md)
+  [`pearsonTest()`](https://geobosh.github.io/fBasicsDoc/reference/test-correlationTest.md)
+  [`kendallTest()`](https://geobosh.github.io/fBasicsDoc/reference/test-correlationTest.md)
+  [`spearmanTest()`](https://geobosh.github.io/fBasicsDoc/reference/test-correlationTest.md)
+  : Correlation tests
+
+- [`ksnormTest()`](https://geobosh.github.io/fBasicsDoc/reference/test-normalityTests.md)
+  [`jbTest()`](https://geobosh.github.io/fBasicsDoc/reference/test-normalityTests.md)
+  [`shapiroTest()`](https://geobosh.github.io/fBasicsDoc/reference/test-normalityTests.md)
+  [`normalTest()`](https://geobosh.github.io/fBasicsDoc/reference/test-normalityTests.md)
+  [`jarqueberaTest()`](https://geobosh.github.io/fBasicsDoc/reference/test-normalityTests.md)
+  [`dagoTest()`](https://geobosh.github.io/fBasicsDoc/reference/test-normalityTests.md)
+  [`adTest()`](https://geobosh.github.io/fBasicsDoc/reference/test-normalityTests.md)
+  [`cvmTest()`](https://geobosh.github.io/fBasicsDoc/reference/test-normalityTests.md)
+  [`lillieTest()`](https://geobosh.github.io/fBasicsDoc/reference/test-normalityTests.md)
+  [`pchiTest()`](https://geobosh.github.io/fBasicsDoc/reference/test-normalityTests.md)
+  [`sfTest()`](https://geobosh.github.io/fBasicsDoc/reference/test-normalityTests.md)
+  : Tests for normality
+
+- [`ks2Test()`](https://geobosh.github.io/fBasicsDoc/reference/test-ks2Test.md)
+  : Two sample Kolmogorov-Smirnov test
+
+- [`locationTest()`](https://geobosh.github.io/fBasicsDoc/reference/test-locationTest.md)
+  : Two sample location tests
+
+- [`scaleTest()`](https://geobosh.github.io/fBasicsDoc/reference/test-scaleTest.md)
+  : Two sample scale tests
+
+- [`varianceTest()`](https://geobosh.github.io/fBasicsDoc/reference/test-varianceTest.md)
+  : Two sample variance tests
+
+- [`fHTEST-class`](https://geobosh.github.io/fBasicsDoc/reference/fHTEST-class.md)
+  [`fHTEST`](https://geobosh.github.io/fBasicsDoc/reference/fHTEST-class.md)
+  [`show,fHTEST-method`](https://geobosh.github.io/fBasicsDoc/reference/fHTEST-class.md)
+  :
+
+  Class `"fHTEST"`
+
+## Other statistical functions
+
+- [`pdl()`](https://geobosh.github.io/fBasicsDoc/reference/matrix-pdl.md)
+  : Polynomial distributed lags
+- [`basicStats()`](https://geobosh.github.io/fBasicsDoc/reference/stats-basicStats.md)
+  : Basic time series statistics
+- [`dmaxdd()`](https://geobosh.github.io/fBasicsDoc/reference/stats-maxdd.md)
+  [`pmaxdd()`](https://geobosh.github.io/fBasicsDoc/reference/stats-maxdd.md)
+  [`rmaxdd()`](https://geobosh.github.io/fBasicsDoc/reference/stats-maxdd.md)
+  [`maxddStats()`](https://geobosh.github.io/fBasicsDoc/reference/stats-maxdd.md)
+  : Drawdown statistics
+- [`rowStats()`](https://geobosh.github.io/fBasicsDoc/reference/stats-rowStats.md)
+  [`rowSds()`](https://geobosh.github.io/fBasicsDoc/reference/stats-rowStats.md)
+  [`rowVars()`](https://geobosh.github.io/fBasicsDoc/reference/stats-rowStats.md)
+  [`rowSkewness()`](https://geobosh.github.io/fBasicsDoc/reference/stats-rowStats.md)
+  [`rowKurtosis()`](https://geobosh.github.io/fBasicsDoc/reference/stats-rowStats.md)
+  [`rowMaxs()`](https://geobosh.github.io/fBasicsDoc/reference/stats-rowStats.md)
+  [`rowMins()`](https://geobosh.github.io/fBasicsDoc/reference/stats-rowStats.md)
+  [`rowProds()`](https://geobosh.github.io/fBasicsDoc/reference/stats-rowStats.md)
+  [`rowQuantiles()`](https://geobosh.github.io/fBasicsDoc/reference/stats-rowStats.md)
+  [`rowStdevs()`](https://geobosh.github.io/fBasicsDoc/reference/stats-rowStats.md)
+  [`rowAvgs()`](https://geobosh.github.io/fBasicsDoc/reference/stats-rowStats.md)
+  : Row statistics
+- [`normMED()`](https://geobosh.github.io/fBasicsDoc/reference/dist-normRobMoments.md)
+  [`normIQR()`](https://geobosh.github.io/fBasicsDoc/reference/dist-normRobMoments.md)
+  [`normSKEW()`](https://geobosh.github.io/fBasicsDoc/reference/dist-normRobMoments.md)
+  [`normKURT()`](https://geobosh.github.io/fBasicsDoc/reference/dist-normRobMoments.md)
+  : Robust moments for the Normal distribution
+- [`sampleMED()`](https://geobosh.github.io/fBasicsDoc/reference/stats-sampleLMoments.md)
+  [`sampleIQR()`](https://geobosh.github.io/fBasicsDoc/reference/stats-sampleLMoments.md)
+  [`sampleSKEW()`](https://geobosh.github.io/fBasicsDoc/reference/stats-sampleLMoments.md)
+  [`sampleKURT()`](https://geobosh.github.io/fBasicsDoc/reference/stats-sampleLMoments.md)
+  : Robust moments for the GLD
+- [`sampleLmoments()`](https://geobosh.github.io/fBasicsDoc/reference/stats-sampleRobMoments.md)
+  : Sample L-moments
+- [`set.lcgseed()`](https://geobosh.github.io/fBasicsDoc/reference/utils-randLCG.md)
+  [`get.lcgseed()`](https://geobosh.github.io/fBasicsDoc/reference/utils-randLCG.md)
+  [`runif.lcg()`](https://geobosh.github.io/fBasicsDoc/reference/utils-randLCG.md)
+  [`rnorm.lcg()`](https://geobosh.github.io/fBasicsDoc/reference/utils-randLCG.md)
+  [`rt.lcg()`](https://geobosh.github.io/fBasicsDoc/reference/utils-randLCG.md)
+  : Generator for Portable random innovations
+- [`volatility()`](https://geobosh.github.io/fBasicsDoc/reference/volatility.md)
+  : Compute volatility
+
+## Distributions and distribution fitting
+
+- [`nFit()`](https://geobosh.github.io/fBasicsDoc/reference/dist-DistributionFits.md)
+  [`tFit()`](https://geobosh.github.io/fBasicsDoc/reference/dist-DistributionFits.md)
+  [`stableFit()`](https://geobosh.github.io/fBasicsDoc/reference/dist-DistributionFits.md)
+  : Fit normal, Student-t and stable distributions
+
+- [`fDISTFIT-class`](https://geobosh.github.io/fBasicsDoc/reference/fDISTFIT-class.md)
+  [`show,fDISTFIT-method`](https://geobosh.github.io/fBasicsDoc/reference/fDISTFIT-class.md)
+  :
+
+  Class `"fDISTFIT"`
+
+- [`distCheck()`](https://geobosh.github.io/fBasicsDoc/reference/dist-distCheck.md)
+  : Distribution check
+
+## Hyperbolic Distribution
+
+- [`dhyp()`](https://geobosh.github.io/fBasicsDoc/reference/dist-hyp.md)
+  [`phyp()`](https://geobosh.github.io/fBasicsDoc/reference/dist-hyp.md)
+  [`qhyp()`](https://geobosh.github.io/fBasicsDoc/reference/dist-hyp.md)
+  [`rhyp()`](https://geobosh.github.io/fBasicsDoc/reference/dist-hyp.md)
+  : Hyperbolic distribution
+- [`hypFit()`](https://geobosh.github.io/fBasicsDoc/reference/dist-hypFit.md)
+  : Fit a hyperbolic distribution
+- [`hypMode()`](https://geobosh.github.io/fBasicsDoc/reference/dist-hypMode.md)
+  : Hyperbolic mode
+- [`hypMean()`](https://geobosh.github.io/fBasicsDoc/reference/dist-hypMoments.md)
+  [`hypVar()`](https://geobosh.github.io/fBasicsDoc/reference/dist-hypMoments.md)
+  [`hypSkew()`](https://geobosh.github.io/fBasicsDoc/reference/dist-hypMoments.md)
+  [`hypKurt()`](https://geobosh.github.io/fBasicsDoc/reference/dist-hypMoments.md)
+  [`hypMoments()`](https://geobosh.github.io/fBasicsDoc/reference/dist-hypMoments.md)
+  : Hyperbolic distribution moments
+- [`hypMED()`](https://geobosh.github.io/fBasicsDoc/reference/dist-hypRobMoments.md)
+  [`hypIQR()`](https://geobosh.github.io/fBasicsDoc/reference/dist-hypRobMoments.md)
+  [`hypSKEW()`](https://geobosh.github.io/fBasicsDoc/reference/dist-hypRobMoments.md)
+  [`hypKURT()`](https://geobosh.github.io/fBasicsDoc/reference/dist-hypRobMoments.md)
+  : Robust moments for the HYP
+- [`hypSlider()`](https://geobosh.github.io/fBasicsDoc/reference/dist-hypSlider.md)
+  : Hyperbolic distribution slider
+
+## Generalized Hyperbolic Distribution
+
+- [`dgh()`](https://geobosh.github.io/fBasicsDoc/reference/dist-gh.md)
+  [`pgh()`](https://geobosh.github.io/fBasicsDoc/reference/dist-gh.md)
+  [`qgh()`](https://geobosh.github.io/fBasicsDoc/reference/dist-gh.md)
+  [`rgh()`](https://geobosh.github.io/fBasicsDoc/reference/dist-gh.md) :
+  Generalized Hyperbolic Distribution
+- [`ghFit()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghFit.md)
+  : GH Distribution Fit
+- [`ghMode()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghMode.md)
+  : Generalized Hyperbolic Mode
+- [`ghMean()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghMoments.md)
+  [`ghVar()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghMoments.md)
+  [`ghSkew()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghMoments.md)
+  [`ghKurt()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghMoments.md)
+  [`ghMoments()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghMoments.md)
+  : Generalized Hyperbolic Distribution Moments
+- [`ghMED()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghRobMoments.md)
+  [`ghIQR()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghRobMoments.md)
+  [`ghSKEW()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghRobMoments.md)
+  [`ghKURT()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghRobMoments.md)
+  : Robust Moments for the GH
+- [`ghSlider()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghSlider.md)
+  : Generalized Hyperbolic Distribution Slider
+
+## Generalized Hyperbolic Student-t
+
+- [`dght()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ght.md)
+  [`pght()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ght.md)
+  [`qght()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ght.md)
+  [`rght()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ght.md)
+  : Generalized Hyperbolic Student-t distribution
+- [`ghtFit()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghtFit.md)
+  : GHT distribution fit
+- [`ghtMode()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghtMode.md)
+  : Generalized Hyperbolic Student-t Mode
+- [`ghtMean()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghtMoments.md)
+  [`ghtVar()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghtMoments.md)
+  [`ghtSkew()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghtMoments.md)
+  [`ghtKurt()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghtMoments.md)
+  [`ghtMoments()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghtMoments.md)
+  : Generalized Hyperbolic Student-t Moments
+- [`ghtMED()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghtRobMoments.md)
+  [`ghtIQR()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghtRobMoments.md)
+  [`ghtSKEW()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghtRobMoments.md)
+  [`ghtKURT()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ghtRobMoments.md)
+  : Robust Moments for the GHT
+
+## Generalized Lambda Distribution
+
+- [`dgld()`](https://geobosh.github.io/fBasicsDoc/reference/dist-gld.md)
+  [`pgld()`](https://geobosh.github.io/fBasicsDoc/reference/dist-gld.md)
+  [`qgld()`](https://geobosh.github.io/fBasicsDoc/reference/dist-gld.md)
+  [`rgld()`](https://geobosh.github.io/fBasicsDoc/reference/dist-gld.md)
+  : Generalized Lambda Distribution
+- [`gldFit()`](https://geobosh.github.io/fBasicsDoc/reference/dist-gldFit.md)
+  : GH Distribution Fit
+- [`gldMode()`](https://geobosh.github.io/fBasicsDoc/reference/dist-gldMode.md)
+  : Generalized Lambda Distribution Mode
+- [`gldMED()`](https://geobosh.github.io/fBasicsDoc/reference/dist-gldRobMoments.md)
+  [`gldIQR()`](https://geobosh.github.io/fBasicsDoc/reference/dist-gldRobMoments.md)
+  [`gldSKEW()`](https://geobosh.github.io/fBasicsDoc/reference/dist-gldRobMoments.md)
+  [`gldKURT()`](https://geobosh.github.io/fBasicsDoc/reference/dist-gldRobMoments.md)
+  : Robust Moments for the GLD
+
+## Normal Inverse Gaussian Distribution
+
+- [`dnig()`](https://geobosh.github.io/fBasicsDoc/reference/dist-nig.md)
+  [`pnig()`](https://geobosh.github.io/fBasicsDoc/reference/dist-nig.md)
+  [`qnig()`](https://geobosh.github.io/fBasicsDoc/reference/dist-nig.md)
+  [`rnig()`](https://geobosh.github.io/fBasicsDoc/reference/dist-nig.md)
+  : Normal Inverse Gaussian Distribution
+- [`nigFit()`](https://geobosh.github.io/fBasicsDoc/reference/dist-nigFit.md)
+  : Fit of a Normal Inverse Gaussian Distribution
+- [`nigMode()`](https://geobosh.github.io/fBasicsDoc/reference/dist-nigMode.md)
+  : Normal Inverse Gaussian Mode
+- [`nigMean()`](https://geobosh.github.io/fBasicsDoc/reference/dist-nigMoments.md)
+  [`nigVar()`](https://geobosh.github.io/fBasicsDoc/reference/dist-nigMoments.md)
+  [`nigSkew()`](https://geobosh.github.io/fBasicsDoc/reference/dist-nigMoments.md)
+  [`nigKurt()`](https://geobosh.github.io/fBasicsDoc/reference/dist-nigMoments.md)
+  : Moments for the Normal Inverse Gaussian
+- [`nigMED()`](https://geobosh.github.io/fBasicsDoc/reference/dist-nigRobMoments.md)
+  [`nigIQR()`](https://geobosh.github.io/fBasicsDoc/reference/dist-nigRobMoments.md)
+  [`nigSKEW()`](https://geobosh.github.io/fBasicsDoc/reference/dist-nigRobMoments.md)
+  [`nigKURT()`](https://geobosh.github.io/fBasicsDoc/reference/dist-nigRobMoments.md)
+  : Robust Moments for the NIG
+- [`nigShapeTriangle()`](https://geobosh.github.io/fBasicsDoc/reference/dist-nigShapeTriangle.md)
+  : NIG Shape Triangle
+- [`nigSlider()`](https://geobosh.github.io/fBasicsDoc/reference/dist-nigSlider.md)
+  : nigerbolic Distribution Slider
+
+## Standardized distributions
+
+- [`dsgh()`](https://geobosh.github.io/fBasicsDoc/reference/dist-sgh.md)
+  [`psgh()`](https://geobosh.github.io/fBasicsDoc/reference/dist-sgh.md)
+  [`qsgh()`](https://geobosh.github.io/fBasicsDoc/reference/dist-sgh.md)
+  [`rsgh()`](https://geobosh.github.io/fBasicsDoc/reference/dist-sgh.md)
+  : Standardized Generalized Hyperbolic Distribution
+- [`sghFit()`](https://geobosh.github.io/fBasicsDoc/reference/dist-sghFit.md)
+  : Standardized GH distribution fit
+- [`dsght()`](https://geobosh.github.io/fBasicsDoc/reference/dist-sght.md)
+  [`psght()`](https://geobosh.github.io/fBasicsDoc/reference/dist-sght.md)
+  [`qsght()`](https://geobosh.github.io/fBasicsDoc/reference/dist-sght.md)
+  [`rsght()`](https://geobosh.github.io/fBasicsDoc/reference/dist-sght.md)
+  : Standardized generalized hyperbolic Student-t Distribution
+- [`dsnig()`](https://geobosh.github.io/fBasicsDoc/reference/dist-snig.md)
+  [`psnig()`](https://geobosh.github.io/fBasicsDoc/reference/dist-snig.md)
+  [`qsnig()`](https://geobosh.github.io/fBasicsDoc/reference/dist-snig.md)
+  [`rsnig()`](https://geobosh.github.io/fBasicsDoc/reference/dist-snig.md)
+  : Standardized Normal Inverse Gaussian Distribution
+- [`snigFit()`](https://geobosh.github.io/fBasicsDoc/reference/dist-snigFit.md)
+  : Fit of a Standardized NIG Distribution
+
+## Spline smoothed distribution
+
+- [`dssd()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ssd.md)
+  [`pssd()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ssd.md)
+  [`qssd()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ssd.md)
+  [`rssd()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ssd.md)
+  : Spline Smoothed Distribution
+- [`ssdFit()`](https://geobosh.github.io/fBasicsDoc/reference/dist-ssdFit.md)
+  : Fit density using smoothing splines
+
+## Vector and matrix utilities
+
+- [`colVec()`](https://geobosh.github.io/fBasicsDoc/reference/matrix-colVec.md)
+  [`rowVec()`](https://geobosh.github.io/fBasicsDoc/reference/matrix-colVec.md)
+  : Column and row vectors
+- [`gridVector()`](https://geobosh.github.io/fBasicsDoc/reference/matrix-gridVector.md)
+  : Grid vector coordinates
+- [`hilbert()`](https://geobosh.github.io/fBasicsDoc/reference/matrix-hilbert.md)
+  : Hilbert matrix
+- [`inv()`](https://geobosh.github.io/fBasicsDoc/reference/matrix-inv.md)
+  : The inverse of a matrix
+- [`kron()`](https://geobosh.github.io/fBasicsDoc/reference/matrix-kron.md)
+  : Kronecker product
+- [`norm2()`](https://geobosh.github.io/fBasicsDoc/reference/matrix-norm.md)
+  : Matrix norm
+- [`pascal()`](https://geobosh.github.io/fBasicsDoc/reference/matrix-pascal.md)
+  : Pascal matrix
+- [`isPositiveDefinite()`](https://geobosh.github.io/fBasicsDoc/reference/matrix-posDefinite.md)
+  [`makePositiveDefinite()`](https://geobosh.github.io/fBasicsDoc/reference/matrix-posDefinite.md)
+  : Positive definite matrices
+- [`rk()`](https://geobosh.github.io/fBasicsDoc/reference/matrix-rk.md)
+  : The rank of a matrix
+- [`tr()`](https://geobosh.github.io/fBasicsDoc/reference/matrix-tr.md)
+  : Trace of a matrix
+- [`triang()`](https://geobosh.github.io/fBasicsDoc/reference/matrix-triang.md)
+  [`Triang()`](https://geobosh.github.io/fBasicsDoc/reference/matrix-triang.md)
+  : Upper and lower triangular matrices
+- [`tslag()`](https://geobosh.github.io/fBasicsDoc/reference/matrix-tslag.md)
+  : Lagged or leading vector/matrix
+- [`vec()`](https://geobosh.github.io/fBasicsDoc/reference/matrix-vech.md)
+  [`vech()`](https://geobosh.github.io/fBasicsDoc/reference/matrix-vech.md)
+  : Stacking vectors and matrices
+
+## Plotting
+
+- [`acfPlot()`](https://geobosh.github.io/fBasicsDoc/reference/plot-acfPlot.md)
+  [`pacfPlot()`](https://geobosh.github.io/fBasicsDoc/reference/plot-acfPlot.md)
+  [`lacfPlot()`](https://geobosh.github.io/fBasicsDoc/reference/plot-acfPlot.md)
+  [`teffectPlot()`](https://geobosh.github.io/fBasicsDoc/reference/plot-acfPlot.md)
+  : Autocorrelation function plots
+- [`boxPlot()`](https://geobosh.github.io/fBasicsDoc/reference/plot-boxPlot.md)
+  [`boxPercentilePlot()`](https://geobosh.github.io/fBasicsDoc/reference/plot-boxPlot.md)
+  : Time series box plots
+- [`histPlot()`](https://geobosh.github.io/fBasicsDoc/reference/plot-histPlot.md)
+  [`densityPlot()`](https://geobosh.github.io/fBasicsDoc/reference/plot-histPlot.md)
+  [`logDensityPlot()`](https://geobosh.github.io/fBasicsDoc/reference/plot-histPlot.md)
+  : Histogram and density plots
+- [`qqnormPlot()`](https://geobosh.github.io/fBasicsDoc/reference/plot-qqPlot.md)
+  [`qqnigPlot()`](https://geobosh.github.io/fBasicsDoc/reference/plot-qqPlot.md)
+  [`qqghtPlot()`](https://geobosh.github.io/fBasicsDoc/reference/plot-qqPlot.md)
+  [`qqgldPlot()`](https://geobosh.github.io/fBasicsDoc/reference/plot-qqPlot.md)
+  : Quantile-quantile plots
+- [`returnSeriesGUI()`](https://geobosh.github.io/fBasicsDoc/reference/plot-returnSeriesGUI.md)
+  : Return series plots
+- [`scalinglawPlot()`](https://geobosh.github.io/fBasicsDoc/reference/plot-scalinglawPlot.md)
+  : Scaling law behaviour
+- [`seriesPlot()`](https://geobosh.github.io/fBasicsDoc/reference/plot-seriesPlot.md)
+  [`cumulatedPlot()`](https://geobosh.github.io/fBasicsDoc/reference/plot-seriesPlot.md)
+  [`returnPlot()`](https://geobosh.github.io/fBasicsDoc/reference/plot-seriesPlot.md)
+  [`drawdownPlot()`](https://geobosh.github.io/fBasicsDoc/reference/plot-seriesPlot.md)
+  : Financial time series plots
+- [`stableSlider()`](https://geobosh.github.io/fBasicsDoc/reference/stableSlider.md)
+  : Slider GUI for Stable Distribution
+- [`interactivePlot()`](https://geobosh.github.io/fBasicsDoc/reference/utils-interactivePlot.md)
+  : Interactive Plot Utility
+
+## Interpolation
+
+- [`linearInterp()`](https://geobosh.github.io/fBasicsDoc/reference/stats-interpLinear.md)
+  [`linearInterpp()`](https://geobosh.github.io/fBasicsDoc/reference/stats-interpLinear.md)
+  : Bivariate Linear Interpolation
+- [`krigeInterp()`](https://geobosh.github.io/fBasicsDoc/reference/stats-interpKrige.md)
+  : Bivariate Krige Interpolation
+- [`akimaInterp()`](https://geobosh.github.io/fBasicsDoc/reference/stats-interpAkima.md)
+  [`akimaInterpp()`](https://geobosh.github.io/fBasicsDoc/reference/stats-interpAkima.md)
+  : Bivariate Spline Interpolation
+
+## Special functions
+
+- [`Heaviside()`](https://geobosh.github.io/fBasicsDoc/reference/utils-Heaviside.md)
+  [`Sign()`](https://geobosh.github.io/fBasicsDoc/reference/utils-Heaviside.md)
+  [`Delta()`](https://geobosh.github.io/fBasicsDoc/reference/utils-Heaviside.md)
+  [`Boxcar()`](https://geobosh.github.io/fBasicsDoc/reference/utils-Heaviside.md)
+  [`Ramp()`](https://geobosh.github.io/fBasicsDoc/reference/utils-Heaviside.md)
+  : Heaviside and related functions
+- [`tsHessian()`](https://geobosh.github.io/fBasicsDoc/reference/utils-hessian.md)
+  : Two sided approximated Hessian
+
+## Colour
+
+- [`colorLocator()`](https://geobosh.github.io/fBasicsDoc/reference/utils-colorLocator.md)
+  [`colorMatrix()`](https://geobosh.github.io/fBasicsDoc/reference/utils-colorLocator.md)
+  : Named colors in R
+- [`rainbowPalette()`](https://geobosh.github.io/fBasicsDoc/reference/utils-colorPalette.md)
+  [`heatPalette()`](https://geobosh.github.io/fBasicsDoc/reference/utils-colorPalette.md)
+  [`terrainPalette()`](https://geobosh.github.io/fBasicsDoc/reference/utils-colorPalette.md)
+  [`topoPalette()`](https://geobosh.github.io/fBasicsDoc/reference/utils-colorPalette.md)
+  [`cmPalette()`](https://geobosh.github.io/fBasicsDoc/reference/utils-colorPalette.md)
+  [`greyPalette()`](https://geobosh.github.io/fBasicsDoc/reference/utils-colorPalette.md)
+  [`timPalette()`](https://geobosh.github.io/fBasicsDoc/reference/utils-colorPalette.md)
+  [`rampPalette()`](https://geobosh.github.io/fBasicsDoc/reference/utils-colorPalette.md)
+  [`seqPalette()`](https://geobosh.github.io/fBasicsDoc/reference/utils-colorPalette.md)
+  [`divPalette()`](https://geobosh.github.io/fBasicsDoc/reference/utils-colorPalette.md)
+  [`qualiPalette()`](https://geobosh.github.io/fBasicsDoc/reference/utils-colorPalette.md)
+  [`focusPalette()`](https://geobosh.github.io/fBasicsDoc/reference/utils-colorPalette.md)
+  [`monoPalette()`](https://geobosh.github.io/fBasicsDoc/reference/utils-colorPalette.md)
+  : Color palettes
+- [`characterTable()`](https://geobosh.github.io/fBasicsDoc/reference/utils-characterTable.md)
+  : Table of characters
+- [`colorTable()`](https://geobosh.github.io/fBasicsDoc/reference/utils-colorTable.md)
+  : Table of colors
+- [`symbolTable()`](https://geobosh.github.io/fBasicsDoc/reference/utils-symbolTable.md)
+  : Table of symbols
+- [`decor()`](https://geobosh.github.io/fBasicsDoc/reference/utils-decor.md)
+  [`hgrid()`](https://geobosh.github.io/fBasicsDoc/reference/utils-decor.md)
+  [`vgrid()`](https://geobosh.github.io/fBasicsDoc/reference/utils-decor.md)
+  [`boxL()`](https://geobosh.github.io/fBasicsDoc/reference/utils-decor.md)
+  [`box_()`](https://geobosh.github.io/fBasicsDoc/reference/utils-decor.md)
+  [`copyright()`](https://geobosh.github.io/fBasicsDoc/reference/utils-decor.md)
+  : Functions for decorating plots
+
+## S4 utilities
+
+- [`getModel()`](https://geobosh.github.io/fBasicsDoc/reference/utils-getS4.md)
+  [`getTitle()`](https://geobosh.github.io/fBasicsDoc/reference/utils-getS4.md)
+  [`getDescription()`](https://geobosh.github.io/fBasicsDoc/reference/utils-getS4.md)
+  [`getSlot()`](https://geobosh.github.io/fBasicsDoc/reference/utils-getS4.md)
+  [`getArgs()`](https://geobosh.github.io/fBasicsDoc/reference/utils-getS4.md)
+  : General S4 Class Extractor Functions
+
+## Package utilities
+
+- [`listFunctions()`](https://geobosh.github.io/fBasicsDoc/reference/utils-listFunctions.md)
+  [`countFunctions()`](https://geobosh.github.io/fBasicsDoc/reference/utils-listFunctions.md)
+  [`listIndex()`](https://geobosh.github.io/fBasicsDoc/reference/utils-listFunctions.md)
+  : List exported functions in a package
+- [`print(`*`<control>`*`)`](https://geobosh.github.io/fBasicsDoc/reference/utils-printControl.md)
+  : Print control
+
+## Deprecated functions
+
+- [`fBasics-deprecated`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
+  [`.acfPlot`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
+  [`.contourPlot`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
+  [`.distCheck`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
+  [`.firePlot`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
+  [`.mrlPlot`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
+  [`.pacfPlot`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
+  [`.perspPlot`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
+  [`.plot`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
+  [`.predict`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
+  [`.qStableFit`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
+  [`.residualsPlot`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
+  [`.responsesPlot`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
+  [`.sliderMenu`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
+  [`.unirootNA`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
+  : Deprecated functions in package fBasics
+
+## Reexported functions
+
+The following functions are re-exported from packages ‘timeDate’ and
+‘timeSeries’, for convenience. If you need more functionality from those
+packages, run ‘library()’ in your session.
+
+- [`as.timeSeries`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-reexports.md)
+  [`kurtosis`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-reexports.md)
+  [`skewness`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-reexports.md)
+  : Objects exported from other packages
+
+## Unclassified
+
+TODO: these are generic functions for the corresponding base R ones
+(which serve as default methods). Seem abandoned. Remove?
+
+- [`stdev(`*`<default>`*`)`](https://geobosh.github.io/fBasicsDoc/reference/baseMethods.md)
+  [`termPlot(`*`<default>`*`)`](https://geobosh.github.io/fBasicsDoc/reference/baseMethods.md)
+  : Generic functions extensions
+
+## S+ compatibility
+
+- [`colIds()`](https://geobosh.github.io/fBasicsDoc/reference/utils-colIds.md)
+  [`rowIds()`](https://geobosh.github.io/fBasicsDoc/reference/utils-colIds.md)
+  : Set and retrieve column/row names
+
