@@ -410,7 +410,6 @@
 - [`fBasics-deprecated`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
   [`.acfPlot`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
   [`.contourPlot`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
-  [`.distCheck`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
   [`.firePlot`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
   [`.mrlPlot`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)
   [`.pacfPlot`](https://geobosh.github.io/fBasicsDoc/reference/fBasics-deprecated.md)

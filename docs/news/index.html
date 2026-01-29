@@ -13,7 +13,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4052.98</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4052.98.9000</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,11 @@
     </div>
 
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="4052.98" id="fbasics-405298">fBasics 4052.98<a class="anchor" aria-label="anchor" href="#fbasics-405298"></a></h2>
+<h2 class="pkg-version" data-toc-text="4052.98" id="fbasics-405298">fBasics 4052.98<a class="anchor" aria-label="anchor" href="#fbasics-405298"></a></h2><p class="text-muted">CRAN release: 2025-12-07</p>
+<ul><li>stopped exporting <code>.distCheck()</code> and removed it from the code. it was made defunct in v4032.96. Use <code><a href="../reference/dist-distCheck.html">distCheck()</a></code> (no leading dot here) instead.</li>
+</ul></div>
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="4052.98" id="fbasics-405298-1">fBasics 4052.98<a class="anchor" aria-label="anchor" href="#fbasics-405298-1"></a></h2><p class="text-muted">CRAN release: 2025-12-07</p>
 <ul><li><p>removed include directive for R_ext/PrtUtil.h from src/nig.c (R-devel throws warning about it now).</p></li>
 <li><p>removed other redundant include directives in src/nig.c</p></li>
 <li><p>removed a superfluous tabular environment from ‘plot-qqPlot.Rd’ (it was raising a NOTE in recent CRAN checks).</p></li>

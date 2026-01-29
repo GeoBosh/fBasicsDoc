@@ -19,14 +19,14 @@
 
 ## Citation
 
-Wuertz D, Setz T, Chalabi Y, Boshnakov GN (2025). *fBasics: Rmetrics -
-Markets and Basic Statistics*. R package version 4052.98,
+Wuertz D, Setz T, Chalabi Y, Boshnakov GN (2026). *fBasics: Rmetrics -
+Markets and Basic Statistics*. R package version 4052.98.9000,
 <https://geobosh.github.io/fBasicsDoc/>.
 
     @Manual{,
       title = {fBasics: Rmetrics - Markets and Basic Statistics},
       author = {Diethelm Wuertz and Tobias Setz and Yohan Chalabi and Georgi N. Boshnakov},
-      year = {2025},
-      note = {R package version 4052.98},
+      year = {2026},
+      note = {R package version 4052.98.9000},
       url = {https://geobosh.github.io/fBasicsDoc/},
     }

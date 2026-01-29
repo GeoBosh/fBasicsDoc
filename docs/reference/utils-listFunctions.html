@@ -23,7 +23,7 @@ Prints the content of an index file for a package (a list of the
 
     <a class="navbar-brand me-2" href="../index.html">fBasics</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4052.98</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4052.98.9000</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -111,95 +111,95 @@ Prints the content of an index file for a package (a list of the
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">listFunctions</span><span class="op">(</span><span class="st">"fBasics"</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   [1] ".acfPlot"             ".contourPlot"         ".distCheck"          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   [4] ".firePlot"            ".mrlPlot"             ".pacfPlot"           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   [7] ".perspPlot"           ".plot"                ".predict"            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [10] ".qStableFit"          ".residualsPlot"       ".responsesPlot"      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [13] ".sliderMenu"          ".unirootNA"           "Boxcar"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [16] "Delta"                "Heaviside"            "Ramp"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [19] "Sign"                 "Triang"               "acfPlot"             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [22] "adTest"               "akimaInterp"          "akimaInterpp"        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [25] "as.timeSeries"        "basicStats"           "boxL"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [28] "boxPercentilePlot"    "boxPlot"              "box_"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [31] "characterTable"       "cmPalette"            "colIds"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [34] "colIds&lt;-"             "colVec"               "colorLocator"        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [37] "colorMatrix"          "colorTable"           "copyright"           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [40] "correlationTest"      "countFunctions"       "cumulatedPlot"       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [43] "cvmTest"              "dagoTest"             "decor"               </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [46] "densityPlot"          "dgh"                  "dght"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [49] "dgld"                 "dhyp"                 "distCheck"           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [52] "divPalette"           "dmaxdd"               "dnig"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [55] "drawdownPlot"         "dsgh"                 "dsght"               </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [58] "dsnig"                "dssd"                 "focusPalette"        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [61] "get.lcgseed"          "getArgs"              "getDescription"      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [64] "getModel"             "getSlot"              "getTitle"            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [67] "ghFit"                "ghIQR"                "ghKURT"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [70] "ghKurt"               "ghMED"                "ghMean"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [73] "ghMode"               "ghMoments"            "ghSKEW"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [76] "ghSkew"               "ghSlider"             "ghVar"               </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [79] "ghtFit"               "ghtIQR"               "ghtKURT"             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [82] "ghtKurt"              "ghtMED"               "ghtMean"             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [85] "ghtMode"              "ghtMoments"           "ghtSKEW"             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [88] "ghtSkew"              "ghtVar"               "gldFit"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [91] "gldIQR"               "gldKURT"              "gldMED"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [94] "gldMode"              "gldSKEW"              "greyPalette"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [97] "gridVector"           "heatPalette"          "hgrid"               </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [100] "hilbert"              "histPlot"             "hypFit"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [103] "hypIQR"               "hypKURT"              "hypKurt"             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [106] "hypMED"               "hypMean"              "hypMode"             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [109] "hypMoments"           "hypSKEW"              "hypSkew"             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [112] "hypSlider"            "hypVar"               "interactivePlot"     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [115] "inv"                  "isPositiveDefinite"   "jarqueberaTest"      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [118] "jbTest"               "kendallTest"          "krigeInterp"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [121] "kron"                 "ks2Test"              "ksnormTest"          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [124] "kurtosis"             "lacfPlot"             "lillieTest"          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [127] "linearInterp"         "linearInterpp"        "listFunctions"       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [130] "listIndex"            "locationTest"         "logDensityPlot"      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [133] "makePositiveDefinite" "maxddStats"           "monoPalette"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [136] "nFit"                 "nigFit"               "nigIQR"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [139] "nigKURT"              "nigKurt"              "nigMED"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [142] "nigMean"              "nigMode"              "nigMoments"          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [145] "nigSKEW"              "nigShapeTriangle"     "nigSkew"             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [148] "nigSlider"            "nigVar"               "norm2"               </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [151] "normIQR"              "normKURT"             "normMED"             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [154] "normSKEW"             "normalTest"           "pacfPlot"            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [157] "pascal"               "pchiTest"             "pdl"                 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [160] "pearsonTest"          "pgh"                  "pght"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [163] "pgld"                 "phyp"                 "pmaxdd"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [166] "pnig"                 "psgh"                 "psght"               </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [169] "psnig"                "pssd"                 "qgh"                 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [172] "qght"                 "qgld"                 "qhyp"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [175] "qnig"                 "qqghtPlot"            "qqgldPlot"           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [178] "qqnigPlot"            "qqnormPlot"           "qsgh"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [181] "qsght"                "qsnig"                "qssd"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [184] "qualiPalette"         "rainbowPalette"       "rampPalette"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [187] "returnPlot"           "returnSeriesGUI"      "returns"             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [190] "rgh"                  "rght"                 "rgld"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [193] "rhyp"                 "rk"                   "rmaxdd"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [196] "rnig"                 "rnorm.lcg"            "rowAvgs"             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [199] "rowIds"               "rowIds&lt;-"             "rowKurtosis"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [202] "rowMaxs"              "rowMins"              "rowProds"            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [205] "rowQuantiles"         "rowSds"               "rowSkewness"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [208] "rowStats"             "rowStdevs"            "rowVars"             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [211] "rowVec"               "rsgh"                 "rsght"               </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [214] "rsnig"                "rssd"                 "rt.lcg"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [217] "runif.lcg"            "sampleIQR"            "sampleKURT"          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [220] "sampleLmoments"       "sampleMED"            "sampleSKEW"          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [223] "scaleTest"            "scalinglawPlot"       "seqPalette"          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [226] "seriesPlot"           "set.lcgseed"          "sfTest"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [229] "sghFit"               "shapiroTest"          "show"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [232] "skewness"             "snigFit"              "spearmanTest"        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [235] "ssdFit"               "stableFit"            "stableSlider"        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [238] "stdev"                "symbolTable"          "tFit"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [241] "teffectPlot"          "termPlot"             "terrainPalette"      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [244] "timPalette"           "timeSeries"           "topoPalette"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [247] "tr"                   "triang"               "tsHessian"           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [250] "tslag"                "varianceTest"         "vec"                 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [253] "vech"                 "vgrid"                "volatility"          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   [1] ".acfPlot"             ".contourPlot"         ".firePlot"           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   [4] ".mrlPlot"             ".pacfPlot"            ".perspPlot"          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   [7] ".plot"                ".predict"             ".qStableFit"         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [10] ".residualsPlot"       ".responsesPlot"       ".sliderMenu"         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [13] ".unirootNA"           "Boxcar"               "Delta"               </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [16] "Heaviside"            "Ramp"                 "Sign"                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [19] "Triang"               "acfPlot"              "adTest"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [22] "akimaInterp"          "akimaInterpp"         "as.timeSeries"       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [25] "basicStats"           "boxL"                 "boxPercentilePlot"   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [28] "boxPlot"              "box_"                 "characterTable"      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [31] "cmPalette"            "colIds"               "colIds&lt;-"            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [34] "colVec"               "colorLocator"         "colorMatrix"         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [37] "colorTable"           "copyright"            "correlationTest"     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [40] "countFunctions"       "cumulatedPlot"        "cvmTest"             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [43] "dagoTest"             "decor"                "densityPlot"         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [46] "dgh"                  "dght"                 "dgld"                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [49] "dhyp"                 "distCheck"            "divPalette"          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [52] "dmaxdd"               "dnig"                 "drawdownPlot"        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [55] "dsgh"                 "dsght"                "dsnig"               </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [58] "dssd"                 "focusPalette"         "get.lcgseed"         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [61] "getArgs"              "getDescription"       "getModel"            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [64] "getSlot"              "getTitle"             "ghFit"               </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [67] "ghIQR"                "ghKURT"               "ghKurt"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [70] "ghMED"                "ghMean"               "ghMode"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [73] "ghMoments"            "ghSKEW"               "ghSkew"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [76] "ghSlider"             "ghVar"                "ghtFit"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [79] "ghtIQR"               "ghtKURT"              "ghtKurt"             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [82] "ghtMED"               "ghtMean"              "ghtMode"             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [85] "ghtMoments"           "ghtSKEW"              "ghtSkew"             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [88] "ghtVar"               "gldFit"               "gldIQR"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [91] "gldKURT"              "gldMED"               "gldMode"             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [94] "gldSKEW"              "greyPalette"          "gridVector"          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [97] "heatPalette"          "hgrid"                "hilbert"             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [100] "histPlot"             "hypFit"               "hypIQR"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [103] "hypKURT"              "hypKurt"              "hypMED"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [106] "hypMean"              "hypMode"              "hypMoments"          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [109] "hypSKEW"              "hypSkew"              "hypSlider"           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [112] "hypVar"               "interactivePlot"      "inv"                 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [115] "isPositiveDefinite"   "jarqueberaTest"       "jbTest"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [118] "kendallTest"          "krigeInterp"          "kron"                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [121] "ks2Test"              "ksnormTest"           "kurtosis"            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [124] "lacfPlot"             "lillieTest"           "linearInterp"        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [127] "linearInterpp"        "listFunctions"        "listIndex"           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [130] "locationTest"         "logDensityPlot"       "makePositiveDefinite"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [133] "maxddStats"           "monoPalette"          "nFit"                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [136] "nigFit"               "nigIQR"               "nigKURT"             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [139] "nigKurt"              "nigMED"               "nigMean"             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [142] "nigMode"              "nigMoments"           "nigSKEW"             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [145] "nigShapeTriangle"     "nigSkew"              "nigSlider"           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [148] "nigVar"               "norm2"                "normIQR"             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [151] "normKURT"             "normMED"              "normSKEW"            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [154] "normalTest"           "pacfPlot"             "pascal"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [157] "pchiTest"             "pdl"                  "pearsonTest"         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [160] "pgh"                  "pght"                 "pgld"                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [163] "phyp"                 "pmaxdd"               "pnig"                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [166] "psgh"                 "psght"                "psnig"               </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [169] "pssd"                 "qgh"                  "qght"                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [172] "qgld"                 "qhyp"                 "qnig"                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [175] "qqghtPlot"            "qqgldPlot"            "qqnigPlot"           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [178] "qqnormPlot"           "qsgh"                 "qsght"               </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [181] "qsnig"                "qssd"                 "qualiPalette"        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [184] "rainbowPalette"       "rampPalette"          "returnPlot"          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [187] "returnSeriesGUI"      "returns"              "rgh"                 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [190] "rght"                 "rgld"                 "rhyp"                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [193] "rk"                   "rmaxdd"               "rnig"                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [196] "rnorm.lcg"            "rowAvgs"              "rowIds"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [199] "rowIds&lt;-"             "rowKurtosis"          "rowMaxs"             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [202] "rowMins"              "rowProds"             "rowQuantiles"        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [205] "rowSds"               "rowSkewness"          "rowStats"            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [208] "rowStdevs"            "rowVars"              "rowVec"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [211] "rsgh"                 "rsght"                "rsnig"               </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [214] "rssd"                 "rt.lcg"               "runif.lcg"           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [217] "sampleIQR"            "sampleKURT"           "sampleLmoments"      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [220] "sampleMED"            "sampleSKEW"           "scaleTest"           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [223] "scalinglawPlot"       "seqPalette"           "seriesPlot"          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [226] "set.lcgseed"          "sfTest"               "sghFit"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [229] "shapiroTest"          "show"                 "skewness"            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [232] "snigFit"              "spearmanTest"         "ssdFit"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [235] "stableFit"            "stableSlider"         "stdev"               </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [238] "symbolTable"          "tFit"                 "teffectPlot"         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [241] "termPlot"             "terrainPalette"       "timPalette"          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [244] "timeSeries"           "topoPalette"          "tr"                  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [247] "triang"               "tsHessian"            "tslag"               </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [250] "varianceTest"         "vec"                  "vech"                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [253] "vgrid"                "volatility"          </span>
 <span class="r-in"><span>   </span></span>
 <span class="r-in"><span><span class="fu">countFunctions</span><span class="op">(</span><span class="st">"fBasics"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> fBasics </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>     255 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     254 </span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>

@@ -2,6 +2,17 @@
 
 ## fBasics 4052.98
 
+CRAN release: 2025-12-07
+
+- stopped exporting `.distCheck()` and removed it from the code. it was
+  made defunct in v4032.96. Use
+  [`distCheck()`](https://geobosh.github.io/fBasicsDoc/reference/dist-distCheck.md)
+  (no leading dot here) instead.
+
+## fBasics 4052.98
+
+CRAN release: 2025-12-07
+
 - removed include directive for R_ext/PrtUtil.h from src/nig.c (R-devel
   throws warning about it now).
 
